@@ -1,0 +1,99 @@
+.profile-emp{
+	margin-left: 20%;
+}
+#map{
+  margin-left:0%;
+}
+#map-1{
+  position: absolute;
+  z-index: 1;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+#radS{
+	margin-left: 5%;
+	margin-top: 5%;
+}
+#refresh{
+	margin-left: 120%;
+	margin-top: -52%;
+}
+#info{
+	margin-left: 133%;
+	margin-top: -52%;
+}
+#count-proposal{
+	margin-left: 72%;
+	font-size: 150%;
+	margin-top: -40%;
+}
+#filter{
+	margin-left: 133%;
+	margin-top: -40%;
+}
+.params{
+	margin-left: 72%;
+}
+#params1{
+	margin-top: -20%;
+}
+#params2{
+	margin-top: -10%;
+	line-height: 100%;
+}
+#params3{
+	margin-top: 0%;
+}
+#timer{
+	margin-left: 123%;
+	margin-top: -20%;
+}
+#location{
+	margin-left: 123%;
+	margin-top: -10%;
+}
+#status{
+	margin-left: 123%;
+	margin-top: -4%;
+	color: red;
+}
+.profile-emp {
+  height: 60vh;
+  margin-top: 7%;
+  background: white;
+  border-radius: 45px;
+  padding: 10px;
+}
+.proflie-emp-cont-foot {
+  border-radius: 45px;
+  margin: 2% 0px;
+  margin-left: 25%;
+  background-color: white;
+  width: 60%;
+}
+#proposal-logo{
+	margin-top: 2%;
+	margin-left: -15%;
+}
+#proposal-title{
+	margin-top: 2%;
+	margin-left: 5%;
+	font-size: 120%;
+	font-weight: bold;
+}
+#proposal-message{
+	position: absolute;
+	width: 40%;
+	margin-top: 5%;
+	margin-left: 15%;
+	
+}
+#extra{
+	margin-top: 18%;
+	font-size: 80%;
+	margin-left: -43%;
+}
+#view-details{
+	margin-left: 10%;
+	margin-top: 18%;
+}
