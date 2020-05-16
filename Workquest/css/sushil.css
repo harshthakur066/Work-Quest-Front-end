@@ -50,7 +50,7 @@ margin:0;
   .brand{
     max-width: 15rem;
     margin-top: 0.2rem;
-    margin-left:3rem;
+    /* margin-left: 3rem; */
   }
 
   .navbar{
@@ -67,7 +67,6 @@ margin:0;
   }
   .nav-links{
   	text-decoration: none;
-  	cursor: pointer;
     color: #ffffff;
     font-size: .86rem;
   }
@@ -1289,9 +1288,6 @@ align-self: flex-end;
       justify-content: center;
     }
 
-    .first_items{
-
-    }
     .first_items > img{
       width: 40rem;
     }
@@ -1305,7 +1301,7 @@ align-self: flex-end;
   		display:block;
   	}
     .brand{
-      margin-left:3rem;
+      margin-left:1rem;
     }
     .collapse_btn{
       margin-right:2rem;

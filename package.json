@@ -37,8 +37,8 @@
     "react-standalone-form": "^0.6.1",
     "url-loader": "^2.0.1",
     "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.3",
-    "webpack-dev-server": "^3.7.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
     "yup": "^0.27.0"
   },
   "devDependencies": {
