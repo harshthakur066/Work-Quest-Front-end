@@ -32,38 +32,48 @@ margin:0;
 /* text related css here */
 .smallletters{ margin:0; padding: 0; font-size: .7rem; line-height: .8rem; }
 .smallletters2{ margin:0; padding: 0; font-size: 1rem; }
-.smallletters7{margin:0; padding: 0; font-size: .6rem;}
-.smallletters8{margin:0;padding: 0; font-size:.6rem; line-height:.95rem;}
+.smallletters7{margin:0; padding: 0; font-size: 0.9rem;line-height: 1.5}
+.smallletters8{margin:0;padding: 0; font-size:.8rem; line-height:.95rem;}
 .smallletters9{margin:0;padding: 0; font-size:.8rem; line-height:1.1rem;}
-.heading1{ font-size: 2.3rem; font-weight:900;  color: #0d7fc0; margin:0; padding: 0;}
-.heading2{font-size: 1.5rem;font-weight:900; padding: 0;margin:0;}
+.heading1{ font-size: 2.2rem; font-weight:900;  color: #0d7fc0; margin:0; padding: 0;}
+.heading2{font-size: 1.4rem;font-weight:900; padding: 0;margin:0;}
+.heading2 .hpart1{font-size: 2rem;margin-bottom: 20px;}
+.heading2 .hpart2{margin-top: 5px; margin-bottom: 5px;}
 .heading3{font-size:1.3rem; font-weight:900; padding: 0;margin:0;}
-.mediumletter{font-size:1.1rem; font-weight:900; padding:0;margin: 0;}
-.mediumletter2{font-size: 0.9rem; font-weight: 900;  line-height: 1.1rem;}
+.mediumletter{font-size:1.3rem; font-weight:900; padding:0;margin: 0;}
+.mediumletter2{font-size: 1.1rem; font-weight: 900;  line-height: 1.1rem;}
 .mediumletter3{font-size:0.6rem; color:#000000;}
-.blueletters{color:#0C82C3; margin-top:0%; font-size: 0.9rem;}
+.blueletters{color:#0C82C3; margin-top:0%; font-size: 1rem;}
 .blueletters2{color:#0C82C3;margin:0; font-size:0.8rem;}
 .bigletters{font-size:1.5rem; font-weight: bold; line-height:1.9rem; color: #ffffff; margin:0;}
-
+.sale_info_item .blueletters{
+	margin-top: 5px;
+}
 
   /* Nav bar css */
   .brand{
     max-width: 15rem;
     margin-top: 0.2rem;
+		margin-left: 2rem;
     /* margin-left: 3rem; */
   }
 
   .navbar{
   	position:sticky;
   	top: 0;
+		opacity: 1;
+		background-color: #20253b;
   	z-index: 1;
   	width: 100%;
-    margin:auto;
-  }
+    margin: auto;
+		padding-top: 3px;
+		padding-bottom: 5px;
+	}
   .navbar > nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+		margin-left: 2.5rem;
   }
   .nav-links{
   	text-decoration: none;
@@ -71,6 +81,9 @@ margin:0;
     font-size: .86rem;
   }
 
+	.nav_items div{
+		left: 0;
+	}
 	.wqNav{
 		position: fixed;
     top:0;
@@ -111,6 +124,7 @@ margin:0;
   .collapse_btn{
     display: block;
     margin-right:2rem;
+		margin-left: 18%;
   }
 	.nav_close_btn{
 			position: absolute;
@@ -175,7 +189,6 @@ margin:0;
       flex-direction: column-reverse;
       width: 100%;
       margin:auto;
-      overflow: hidden;
 
   }
   .first_items > img{
@@ -194,10 +207,12 @@ margin:0;
   .first_text_item > p{
     width:60%;
     margin:0;
+		margin-bottom: 20px;
   }
 	.btn_signup{
-		margin:0 .5rem;
-		padding: .6rem .2rem;
+		margin:0;
+		margin-top: 2rem;
+		padding: .6rem .7rem;
 	}
 
   .join_btn{
@@ -219,15 +234,20 @@ margin:0;
     text-align: center;
     margin: 2rem 0 1.5rem 0;
   }
+	.partner .smallletters2 {
+		text-align: center;
+		font-size: 2rem;
+		margin: 7px auto 40px;;
+	}
   .partners-list{
     display: flex;
     padding: 0;
-    margin:0 1.5rem;
+    margin:0 1.7rem 70px;
     flex-direction: row;
     justify-content: space-between;
   }
   .partners-list > li > a > img {
-    width: 5rem;
+    width: 8.7rem;
   }
   .section2{
     margin:1.6rem 1.5rem
@@ -247,7 +267,7 @@ margin:0;
     justify-content: center;
   }
   .about_image_container > img{
-    width: 100%;
+    width: 60%;
   }
   .about_image_container > a{
     display: flex;
@@ -279,9 +299,15 @@ margin:0;
   }
   .about_text_container > p:first-child{
     text-align: center;
-    margin:1.5rem 0;
+    margin:1.7rem 0 1.2rem;
   }
-
+	.about_section_items.about_text_container{
+	  margin: 0 auto;
+		margin-bottom: 5rem;
+		margin-top: 3rem;
+		max-width: 80%;
+		text-align: center;
+	}
   .section3{
     margin:1.6rem 1.5rem;
 		display: flex;
@@ -299,7 +325,7 @@ margin:0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
   }
   .mission_item{
     display: flex;
@@ -316,10 +342,12 @@ margin:0;
     text-align:left;
   }
   .mission_content > p:first-child{
+		margin-top: 5px;
     margin-bottom:.5rem;
   }
 	.btn_whitepaper{
-		padding:0.6rem 0.5rem;
+		margin: 40px auto 90px;
+		padding: 0.9rem 0rem;
 		width: 70%;
 	}
 	.section4{
@@ -363,8 +391,8 @@ margin:0;
 	background-position: left bottom;
 }
 	.pitchdeck{
-		margin:0rem .5rem 1rem .5rem;
-		padding: .6rem 1.9rem;
+		margin:1rem .5rem 5rem .5rem;
+		padding: .9rem 5rem;
 	}
 
 	.section5{
@@ -373,12 +401,14 @@ margin:0;
 		justify-content: center;
 		align-items: center;
 		margin:1rem;
+		margin-top: 3rem;
+
 	}
 	.section5 > p{
 		text-align: center;
 	}
 	.section5 > p:not(:first-child){
-		margin:.5rem 0;
+		margin: .5rem 0;
 		padding: 0 1.2rem;
 	}
 	.countdown{
@@ -388,7 +418,7 @@ margin:0;
 			align-items: center;
 			background-image: linear-gradient(to bottom, #283F79, #0C82C3);
 			border-radius: 65px;
-			padding: 2rem;
+			padding: 2.5rem 4.5rem;
 			margin:1rem 0 2rem 0;
 	}
 	.countdown > p{
@@ -403,8 +433,8 @@ margin:0;
 
 	}
 	.countdown-boxes{
-		height: 2.7rem;
-		width: 2.7rem;
+		height: 3rem;
+		width: 3rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -434,8 +464,8 @@ margin:0;
 	  background-position:right bottom;
 	  transition: all 0.2s ease-in-out;
 		border-radius: 25px;
-		padding:0.4rem 1.4rem;
-		margin-top: 1rem;
+		padding:0.7rem 1.4rem;
+		margin-top: 1.5rem;
 	}
 	.timer-button:hover{
 		background-position:left bottom;
@@ -460,6 +490,9 @@ margin:0;
 		justify-content: center;
 		margin-top: 2rem;
 	}
+	#road.section.section6{
+		margin-top: 5rem;
+	}
 
 	.section6{
 		margin:1rem 0;
@@ -470,6 +503,7 @@ margin:0;
 	.section6 > p{
 		text-align: center;
 		margin:0 1rem;
+
 	}
 	.section6 > p:first-child{
 		margin-top: 2rem;
@@ -477,17 +511,21 @@ margin:0;
 	}
 	.sale_piechart > img{
 		margin-top: 2rem;
-		max-width: 17rem;
+		max-width: 22rem;
 	}
 	.slider{
 		width: 51%;
 		margin: 2rem auto 2rem auto;
+		text-align: center;
 	}
 	.slider1-images{
 		width: 11.6rem;
 	}
 	.chevron{
 		width: 3rem;
+	}
+	.section.section6-item1{
+		margin-top: 2rem;
 	}
 	.section6-item1{
 		opacity: 1;
@@ -496,6 +534,9 @@ margin:0;
 		text-align: center;
 		margin-bottom: 0.5rem;
 		margin:0 1rem 0.5rem 1rem;
+	}
+	.section6-item1 .heading1{
+		margin-bottom: 20px;
 	}
 	.item1-child{
 		display: flex;
@@ -518,7 +559,6 @@ margin:0;
     border: 3px solid white;
     border-radius: 3rem;
 		box-sizing: border-box;
-
 	}
 	.child1-list{
 		padding: 0;
@@ -567,11 +607,16 @@ margin:0;
 		position: absolute;
 			z-index: -1;
 			width: 100%;
-			height: 20.4rem;
+			height: 24rem;
   	}
-
+	.section.section6-item2.section6-items{
+		margin-top: 4rem;
+	}
+		.section.section6-item2.section6-items .heading1{
+		margin-bottom: 2rem;
+	}
 	.section6-item2{
-		z-index: 1;
+		/* z-index: 1; */
 		opacity: 1;
 		transform: translate(0, 10px);
 	 }
@@ -595,15 +640,22 @@ margin:0;
 	.section6-one-third{
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
+		 /* align-items: center;  */
+		/* justify-content: center; */
 	}
 
 	.sectin6-middle1{
-	margin:1.1rem 0 2rem 0;
+	margin: 1.1rem 0 2rem 0;
 	}
 
 	.sectin6-middle2{
 		margin:2rem 0;
+	}
+	.section6-one-third.first div{
+		padding-top: 13px;
+	}
+	.section6-one-third.last div{
+		padding-top: 13px;
 	}
 
 	.section6-one-third > div > p:first-child{
@@ -618,9 +670,20 @@ margin:0;
 	.section6-one-third > img{
 		width: 10.2rem;
 	margin-top: -1rem;
+
+	}
+	.section6-item3{
+		margin-top: 2rem;
 	}
 	.section6-item4{
 		position: relative;
+	}
+	.section6-item4 .heading1{
+		margin: 4rem auto 1.5rem;
+	}
+	.section6-item4 .smallletters9{
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
 	}
 	.section6-item4 > p{
 		text-align: center;
@@ -634,9 +697,9 @@ margin:0;
 	}
 	.mac_container{
 		width: 1%;
-position: absolute;
-top: -27%;
-left: -32%;
+		position: absolute;
+		top: -27%;
+		left: -20%;
 	}
 	.macbook{
 		width: 45rem;
@@ -650,6 +713,7 @@ left: -32%;
 }
 	.blue-wallpaper{
 	   height: 49rem;
+		 width: 110%;
 	}
 	.section6-item4-content{
 		position: absolute;
@@ -657,7 +721,18 @@ left: -32%;
     width: 80%;
     left: 10%;
 	}
-
+.section6-item4-content div{
+	margin-top: 0.7rem;
+}
+.section6-item4-content div .bigletters{
+	margin-bottom: 9px;
+}
+.section6-item4-content div .smallletters{
+	line-height: 1.5;
+}
+.section6-item4-content div{
+	margin-bottom: 2rem;
+}
 	.section7{
 		margin:1rem;
 	}
@@ -707,6 +782,7 @@ left: -32%;
 			border: 3px solid #3EB5F1;
 	    width: 85%;
 	    padding: 1rem;
+			padding-top: 1.9rem;
 	    border-radius: 19%;
 	    margin-top: 2rem;
 	    display: flex;
@@ -736,8 +812,8 @@ left: -32%;
 		width: 10rem;
 		color: white;
 		border: none;
-		padding: 0.4rem 1rem;
-		font-size: 0.8rem;
+		padding: 0.8rem 1rem;
+		font-size: .9rem;
 		margin: auto;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
@@ -747,20 +823,25 @@ left: -32%;
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
-		justify-content: space-between;
+		justify-content:space-around;
 		margin:2rem 0 0 0;
 	}
+.contact_details p{
+	text-align: center;
+}
 	.section9{
 		margin:1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding-bottom: 7rem;
 	}
 	.section9-heading{
+		margin-top: 5rem;
 		text-align: center;
     padding: 1rem 1rem 0 1rem;
-    margin-bottom: .4rem;
+    margin-bottom: 3rem;
 	}
 	.section9-context{
 		text-align: center;
@@ -777,7 +858,7 @@ left: -32%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		width: 100%;
 		margin:1rem 0;
 	}
@@ -789,7 +870,8 @@ left: -32%;
 		font-weight: 600;
 		cursor:pointer;
 		border-bottom:2px solid #3eb5f1;
-		padding:0 1rem .3rem 1rem;
+		padding:0.7rem 1rem 1rem 1rem;
+		margin-right: 2rem;
 	}
 	.faq-btn:focus{
 		outline:none;
@@ -807,12 +889,27 @@ left: -32%;
 
 	.faq-item{
 		margin-top: 1rem;
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
 	}
-
+  .faq-item .blueletters2{
+		font-size: 1rem;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	#small-logo7{
+		height: 500px;
+		width: 100%;
+		padding: 0;
+		margin:0;
+	}
 	.display_none_class{
 		display: none;
 	}
 	.footer_wrapper{
+		padding-top: 3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -824,9 +921,12 @@ left: -32%;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		padding-top: 3rem;
 	}
+
 	.footer_section_image{
 		width:50%;
+		margin-right: 5rem;
 	}
 	.footer_section_image > img{
 		width: 100%;
@@ -855,28 +955,27 @@ left: -32%;
 	}
 	.footer_foot{
 		display: flex;
-justify-content: space-between;
-align-items: center;
+		justify-content: flex-end;
+		align-items: center;
 	}
 	#footer{
 		background: #000724;
 	}
 	.footer_foot > img{
 		position: absolute;
-z-index: 0;
-width: 17rem;
-/* bottom: 0; */
-left: -2rem;
-/* position: relative; */
-align-self: flex-end;
-	}
+		z-index: 0;
+		width: 17rem;
+		/* bottom: 0; */
+		left: -2rem;
+		/* position: relative; */
+		align-self: flex-end;
+			}
 
 	.footer_foot > div{
 	z-index: 1;
 	text-align: right;
 	width: 24rem;
 	margin-left: 50%;
-	font-size: -0.8rem;
 	font-size: 0.7rem;
 	margin-right: 1rem;
 }
@@ -1065,7 +1164,7 @@ align-self: flex-end;
 		left: 6%;
 		padding: 3rem 1rem 4.5rem 1rem;
 		border-radius:3.6rem;
-		background:url(../images/Clip2.png);
+		background:url(../../../public/images/Clip2.png);
     background-size: contain;
     background-position: 0% 100%;
 		background-color:white;
@@ -1226,8 +1325,9 @@ align-self: flex-end;
       width: 100%;
     }
     .navbar > nav{
-      justify-content:space-around;
-    }
+      /* justify-content:space-around; */
+
+	  }
     .nav_link_items > li{
       margin-right: 2rem;
       margin-top:0;
@@ -1238,6 +1338,7 @@ align-self: flex-end;
 
     .nav_items {
       margin-right: 1rem;
+			margin-left: 1.5rem;
     }
     #particles{
   		display:block;
@@ -1296,7 +1397,9 @@ align-self: flex-end;
 
 /*--------------------- for medium screen sizes ---------------------*/
   @media only screen and (min-width:599px) and (max-width:998px)
-  {
+  {	.firstBox{
+		margin-bottom: 70px;
+	}
     #particles{
   		display:block;
   	}
@@ -1305,18 +1408,21 @@ align-self: flex-end;
     }
     .collapse_btn{
       margin-right:2rem;
-    }
+			margin-left: 40%;
+		}
 
   }
-
+	@media screen and (min-width:379px) and (max-width:599px){
+		.firstBox{margin-bottom: 50px;}
+	}
 /*---- extra small devices  ---------------------*/
   @media screen and (max-width:379px){
-
+			.firstBox{margin-bottom: 50px;}
 			.bigletters{font-size: 1.4rem;}
 			.smallletters{font-size: 0.6rem;}
 			.heading1{font-size: 1.88rem;}
 			.smallletters7 {font-size: 0.5rem;line-height: 0.7rem;}
-			.smallletters8 {font-size: 0.48rem;line-height: 0.65rem;}
+			.smallletters8 {font-size: 0.58rem;line-height: 0.65rem;}
 			.smallletters9{font-size: 0.6rem; line-height: 0.9rem;}
 			.heading2{font-size: 1.4rem;}
 			.mediumletter{font-size:.8rem;}
@@ -1325,7 +1431,7 @@ align-self: flex-end;
 			.heading3{font-size: 1.2rem;}
 
 			.brand{max-width: 12rem; margin-left:1rem;}
-			.collapse_btn{margin-right:1rem;}
+			.collapse_btn{margin-right:1rem; margin-left: 5%;}
 			.first_items > img{width: 28rem;}
 			.first_text{margin:0 1rem;}
 			.partners-list > li > a > img{width:4rem;}
@@ -1337,12 +1443,12 @@ align-self: flex-end;
 			.btn_whitepaper {padding: 0.5rem 1.7rem;}
 			.join_btn{font-size: .8rem;}
 			.section4{margin:1rem .4rem;}
-			.feature_items{margin-top: 0.9rem;}
+			.feature_items{margin-top: 0.9rem;max-width: 80%;}
 			.feature_item{ align-items: flex-start;}
 			.feature_item > div{margin:0 0 0.3rem 0.2rem;}
 			.feature_item > div > p:first-child {margin-bottom: 0.3rem;}
 			.feature_item > img {width: 7.8rem;     margin-top: -0.8rem;}
-			.pitchdeck{padding:0.5rem 1.6rem; margin:0;}
+			.pitchdeck{padding: 1rem 1.9rem; margin:0;}
 			.join_btn2{font-size: 0.8rem;}
 			.section5 > p:not(:first-child) {margin: 0.3rem 0; padding: 0 0.2rem;}
 			.countdown{padding:1.6rem 0.9rem; border-radius:45px;  margin:1rem 0 0.8rem 0;}
@@ -1351,4 +1457,5 @@ align-self: flex-end;
 			.timer-button{padding: 0.4rem 1rem; font-size:0.7rem;}
 			.sale_info_item{margin-top:0.7rem;}
 			.sale_piechart > img{max-width:15rem; margin-top:1.5rem;}
+
 	}

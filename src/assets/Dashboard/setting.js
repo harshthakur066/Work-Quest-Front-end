@@ -8,7 +8,7 @@ export default class UserSetting extends Component{
   render(){
     return(
     <div class="setting_section">
-      <div class="user-input"><img src="../images/user.png" id="user-logo" /><p id="user-name4">Christopher Smith</p></div>
+      <div class="user-input"><img src="../../images/user.png" id="user-logo" /><p id="user-name4">Christopher Smith</p></div>
         <div class="dropdown">
           <a class="dropbtn" onClick={this.dropdownHandler}><img src="../images/arrow.png" id="arrow4" /></a>
           <div class="dropdown-content" id="Dropdwn">

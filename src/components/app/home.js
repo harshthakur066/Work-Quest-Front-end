@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
-import './css/app.css';
-import './css/sushil.css';
+import '../../assets/css/app.css';
+import '../../assets/css/sushil.css';
 import ItemsCarousel from 'react-items-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faYoutube, faInstagram, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -50,7 +50,7 @@ class Home extends Component{
       children: Array.from(new Array(8)).map((_, i) =>
     <img className="slider1-images"
       key={i}
-      src = "../images/1.png"
+      src = "src/assets/images/1.png"
     />
   ),
        });
@@ -122,7 +122,7 @@ return(<div id="wholepage" className="pageWrapper">
   <div className="navbar">
   	<nav>
       <div className = "nav_items">
-        <div><a href="#"><img src="images/logo.png" className="brand"></img></a></div>
+        <div><a href="#"><img src="src/assets/images/logo.png" className="brand"></img></a></div>
       </div>
       <div className="nav_items">
         <div className={`collapse_btn ${isActive?'nav_close_btn':''}`} onClick={this.openNav} >
@@ -135,7 +135,7 @@ return(<div id="wholepage" className="pageWrapper">
         <div  className="wqNav nav_items">
           <div className="nav_link_container">
             <div className="wqname">
-              <img src="images/wqname.png"></img>
+              <img src="src/assets/images/wqname.png"></img>
             </div>
             <ul className="nav_link_items">
           		<li><a className="nav-links" onClick={this.scrollTofun.bind(this,'about')}>WHAT IS WORK COIN?</a></li>
@@ -151,7 +151,7 @@ return(<div id="wholepage" className="pageWrapper">
       				<a id="login" className="account nav-links" onClick={this.handleForm.bind(this,'login')}>LOGIN</a>
             </div>
             <div className="mobile_nav_footer">
-              <img src="images/croped_logo.png"></img>
+              <img src="src/assets/images/croped_logo.png"></img>
             </div>
           </div>
     	  </div>
@@ -163,10 +163,10 @@ return(<div id="wholepage" className="pageWrapper">
       <span id="x" className="close" onClick={this.closeForm.bind(this,'login')} title="Close Modal">&times;</span>
       <div className="login_form_item">
         <div className="login_form_wq_logo">
-          <img src="images/wq.png"></img>
+          <img src="src/assets/images/wq.png"></img>
         </div>
         <div className="login_form_ico_item">
-          <img className="login_form_croped_logo" src="images/croped_logo.png"></img>
+          <img className="login_form_croped_logo" src="src/assets/images/croped_logo.png"></img>
           <p className="join_ico_pre">
             LOGIN AND JOIN ICO PRESALE
           </p>
@@ -175,11 +175,11 @@ return(<div id="wholepage" className="pageWrapper">
     	<form className="login_form_content">
       	<div className="login_form_container">
       	    <div>
-            	<p className="whiteprint">L<span><img src="images/photo.png"></img></span>gin</p>
+            	<p className="whiteprint">L<span><img src="src/assets/images/photo.png"></img></span>gin</p>
       	      <div className="input_item">
                 <label className="input_label" htmlFor="login_email">USER NAME
                   <div className="login_input">
-                    <img className="log_img" src="images/user-input.png" />
+                    <img className="log_img" src="src/assets/images/user-input.png" />
                     <input id="login_email" name="email" type="text" placeholder="Enter Email" value={this.state.loginform.eMail} name="eMail" onChange={this.handleLoginChange} required></input>
                   </div>
                 </label>
@@ -187,7 +187,7 @@ return(<div id="wholepage" className="pageWrapper">
               <div className="input_item">
                 <label className="input_label" htmlFor="login_psw">ENTER PASSWORD</label>
                   <div className="login_input">
-                    <img className="log_img log_psw_logo" src="images/password icon.png" />
+                    <img className="log_img log_psw_logo" src="src/assets/images/password icon.png" />
                     <input type="password" id="login_psw" value={this.state.loginform.passWord}  placeholder="Enter Password" onChange={this.handleLoginChange} name="passWord" required />
                   </div>
               </div>
@@ -230,10 +230,10 @@ return(<div id="wholepage" className="pageWrapper">
       <span id="x" onClick={this.closeForm.bind(this,'signup')}className="close" title="Close Modal">&times;</span>
       <div className="signup_form_item">
         <div className="signup_form_wq_logo">
-          <img src="images/wq.png" />
+          <img src="src/assets/images/wq.png" />
         </div>
         <div className="signup_form_ico_item">
-          <img src="images/WORK QUEST_sign.svg" className="signup_form_croped_logo" />
+          <img src="src/assets/images/WORK QUEST_sign.svg" className="signup_form_croped_logo" />
           <p className="wq_signup_text">ENTER BASIC INFORMATIOIN TO GET STARTED</p>
         </div>
       </div>
@@ -241,42 +241,42 @@ return(<div id="wholepage" className="pageWrapper">
         <div className="input_item">
           <label htmlFor="firstName" className="input_label">FIRST NAME</label>
           <div className="login_input">
-           <img src="images/user-input.png" className="log_img" id="input-icons" />
+           <img src="src/assets/images/user-input.png" className="log_img" id="input-icons" />
            <input type="text" placeholder="First Name" name="firstName" onChange={this.handleSignupChange} required />
           </div>
         </div>
         <div className="input_item">
           <label className="input_label" htmlFor="lastName">LAST NAME</label>
           <div className="login_input">
-           <img className="log_img" src="images/user-input.png"/>
+           <img className="log_img" src="src/assets/images/user-input.png"/>
            <input type="text" placeholder="Last Name" name="lastName" onChange={this.handleSignupChange} required />
           </div>
         </div>
         <div className="input_item">
           <label className="input_label" htmlFor="UserName">USER NAME</label>
           <div className="login_input">
-            <img className="log_img" src="images/check-square.png" />
+            <img className="log_img" src="src/assets/images/check-square.png" />
             <input type="text" placeholder="User Name" name="userName" onChange={this.handleSignupChange} required />
           </div>
         </div>
         <div className="input_item">
           <label className="input_label" htmlFor="eMail">MAIL</label>
           <div className="login_input">
-            <img className="log_img" src="images/mail.png"  />
+            <img className="log_img" src="src/assets/images/mail.png"  />
             <input type="text" placeholder="E-Mail" name="eMail" onChange={this.handleSignupChange} required />
           </div>
         </div>
         <div className="input_item">
           <label htmlFor="passWord" className="input_label">ENTER PASSWORD</label>
           <div className="login_input">
-            <img src="images/password icon.png" className="log_img"/>
+            <img src="src/assets/images/password icon.png" className="log_img"/>
             <input type="password" placeholder="Password" name="passWord" onChange={this.handleSignupChange} required />
           </div>
         </div>
         <div className="input_item">
           <label htmlFor="confirmPass" className="input_label">CONFIRM PASSWORD</label>
           <div className="login_input">
-            <img src="images/password icon.png" className="log_img" />
+            <img src="src/assets/images/password icon.png" className="log_img" />
             <input type="password" placeholder="Confirm Password" name="confirmPass" onChange={this.handleSignupChange} required />
           </div>
         </div>
@@ -292,21 +292,21 @@ return(<div id="wholepage" className="pageWrapper">
     		<p className="bigletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR <br></br> ANY TYPE OF WORK.</p>
         <div className="first_text_item">
         	<p className="smallletters">WORK QUEST ICO STARTUP <br></br>A GLOBAL JOB <br></br>MARKETPLACE FOR <br></br>ANY TYPE OF WORK.</p>
-      		<a id="join" className="join_btn btn_signup" onClick={this.handleForm.bind(this,'signup')}>SIGN UP TO JOIN</a>
         </div>
-        <span>
-          <p className="smallletters2">OUR PARTNERS</p>
-        </span>
+        <a id="join" className="join_btn btn_signup" onClick={this.handleForm.bind(this,'signup')}>SIGN UP TO JOIN</a>
       </div>
       <div className="first_items">
-    	   <img src="images/a.png"></img>
+    	   <img src="src/assets/images/a.png"></img>
       </div>
     </div>
+    <div className="partner">
+      <p className="smallletters2">OUR PARTNERS</p>
+    </div>
     <ul className="partners-list">
-      <li><a href="https://eucc.eu/"><img src="images/EUCC.png"></img></a></li>
-      <li><a href="https://globiance.com/"><img src="images/globiance.png"></img></a></li>
-      <li><a href="http://attis-group.com/?page_id=252&lang=en"><img src="images/ag.png"></img></a></li>
-      <li><a href="https://kcolbchain.com/"><img src="images/KCOLBCHAIN.png"></img></a></li>
+      <li><a href="https://eucc.eu/"><img src="src/assets/images/EUCC.png"></img></a></li>
+      <li><a href="https://globiance.com/"><img src="src/assets/images/globiance.png"></img></a></li>
+      <li><a href="http://attis-group.com/?page_id=252&lang=en"><img src="src/assets/images/ag.png"></img></a></li>
+      <li><a href="https://kcolbchain.com/"><img src="src/assets/images/KCOLBCHAIN.png"></img></a></li>
     </ul>
   </div>
   <Fade bottom>
@@ -315,14 +315,14 @@ return(<div id="wholepage" className="pageWrapper">
     <p className="heading1">ABOUT PROJECT</p>
     <div className="about_section">
       <div className="about_section_items about_text_container">
-        <p  className="heading2">WORK COIN<br /> WHY DO WE USE IT?</p>
+        <p  className="heading2"><span className="hpart1">WORK COIN</span><br /><span className="hpart2">WHY DO WE USE IT?</span></p>
         <p  className="smallletters7">WORK COIN IS A CRYPTOCURRENCY USED ON THE WORK QUEST ECO-SYSTEM</p>
         <p  className="smallletters7">WORK COIN, IS A CRYPTOCURRENCY USED TO CALCULATE REMUNERATION BETWEEN AN EMPLOYEE AND EMPLOYER IN THE WORK QUEST NETWORK. THE COIN IS ALSO USED TO FACI.LLITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORK QUEST ECO-SYSTEM. </p>
         <p  className="smallletters7">WORK QUEST AS A GLOBAL PROJECT THAT WOULD WORK AS A TOOL SEARCH AND COMMUNICATION OF WORKERS AND EMPLOYEES. IT IS AN ONLINE WORK MARKETPLACE CONNECTING ALL TYPES OF EMPLOYEES WITH WORKERS AROUND EVERY CORNER OF THE WORLD THROUGH A BLOCKCHAIN POWERED SMART CONTRACT.</p>
   		</div>
       <div className="about_section_items about_image_container">
-    		<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" id="youtube"><img src="images/PLAY BUTTON.png" className="play-btn"></img></a>
-    	  <img src="images/output-onlinepngtools.png"></img>
+    		<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" id="youtube"><img src="src/assets/images/PLAY BUTTON.png" className="play-btn"></img></a>
+    	  <img src="src/assets/images/output-onlinepngtools.png"></img>
       </div>
     </div>
 	</div>
@@ -330,37 +330,37 @@ return(<div id="wholepage" className="pageWrapper">
   </Fade>
 	<div className="section section3">
 		<p className="heading1">OUR MISSION</p>
-		<p className="smallletters8">CONNCETING EMPLOYERS AND EMPLOYEES THROUGH OUR INNOVATIVE ONLINE PLATFORM,<br></br> EASING COMMUNICATION AND IMPROVING FINANCIAL STANDARDS OF ALL STAKEHOLDERS </p>
+		<p className="smallletters7">CONNCETING EMPLOYERS AND EMPLOYEES THROUGH OUR INNOVATIVE ONLINE PLATFORM,<br></br> EASING COMMUNICATION AND IMPROVING FINANCIAL STANDARDS OF ALL STAKEHOLDERS </p>
 		<div className="mission_items">
 			<div className="mission_item">
-				<img src="images/bi.png" ></img>
+				<img src="src/assets/images/bi.png" ></img>
         <div className="mission_content">
           <p className="mediumletter">BLOCKCHAIN <br></br>INFRASTRUCTURE</p>
           <p className="smallletters8">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p>
         </div>
       </div>
 			<div className="mission_item">
-				<img src="images/eti.png"></img>
+				<img src="src/assets/images/eti.png"></img>
         <div className="mission_content">
           <p className="mediumletter">EASY TOKEN <br></br>INTEGRATION</p>
   				<p className="smallletters8">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p>
         </div>
       </div>
 			<div className="mission_item">
-				<img src="images/global.png" ></img>
+				<img src="src/assets/images/global.png" ></img>
         <div className="mission_content">
   				<p className="mediumletter">GLOBAL SYSTEM<br></br> AND SECURE</p>
   				<p className="smallletters8">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p>
         </div>
       </div>
 		</div>
-		<a  className="join_btn btn_whitepaper" href="images/WORK QUEST white paper.pdf">DOWNLOAD WHITEPAPER</a>
+		<a  className="join_btn btn_whitepaper" href="src/assets/images/WORK QUEST white paper.pdf">DOWNLOAD WHITEPAPER</a>
 	</div>
 	<div className="section section4">
 		<p className="heading1">OUR FEATURES</p>
 	<div className="feature_items">
 			<div className="feature_item">
-				<img src="images/ltc.png"></img>
+				<img src="src/assets/images/ltc.png"></img>
         <div>
   				<p className="mediumletter">LOW<br></br>TRANSACTION COST</p>
   				<p className="smallletters8">ON OUR WORK QUEST PLATFORM TRANSACTIONAL FEE IS SET AT 1% OF THE TOTAL USER INCOME AGAINST 7-20%  FEE CHARGED BY OTHER MARKETPLACES.
@@ -368,35 +368,35 @@ return(<div id="wholepage" className="pageWrapper">
         </div>
 			</div>
 			<div className="feature_item">
-				<img src="images/it.png"></img>
+				<img src="src/assets/images/it.png"></img>
         <div>
   				<p className="mediumletter">INNOVATIVE<br></br>TECHNOLOGY</p>
   				<p className="smallletters8">IT IS AN ONLINE JOB MARKETPLACE POWERED BY BLOCKCHAIN THUS TAPPING INTO DECENTRALIZATION FEATURES OF THIS TECHNOLOGY. ANY ONE AROUND THE WORLD CAN USE THE PLATFORM AND BE PAID USING OUR CRYPTOCURRENCY WORK COIN.</p>
         </div>
       </div>
 			<div className="feature_item">
-				<img src="images/rt.png"></img>
+				<img src="src/assets/images/rt.png"></img>
         <div>
   				<p className="mediumletter">REAL TIME</p>
   				<p className="smallletters8">WORK QUEST USES SMART CONTRACT TECHNOLOGY TO FACILLITATE REAL TIME TRANSACTIONS ELIMINATING DELAYS CAUSED BY THIRD PARTIES. IT TAKES A FEW MINUTES TO MATCH JOB DEMAND AND SKILLS AS IT IS ALSO LOCATION BASED.</p>
         </div>
       </div>
 			<div className="feature_item">
-				<img src="images/ss.png"></img>
+				<img src="src/assets/images/ss.png"></img>
         <div>
           <p className="mediumletter">SAFE AND SECURE</p>
 				  <p className="smallletters8">THE PLATFORM IS SAFE AND SECURE TO USE AS THE USE OF BLOCKCHAIN TECHNOLOGY ALLOWS HIGH DATA ENCRYPTION WHICH HELPS IN HARNESSING SECURITY OF THE PLATFORM. AN ESCROW SYSTEM IS INTEGRATED ON THE PLATFORM TO ELIMINATE FINANCIAL FRAUD.</p>
         </div>
       </div>
 			<div className="feature_item">
-				<img src="images/ivrs.png" ></img>
+				<img src="src/assets/images/ivrs.png" ></img>
         <div>
   				<p className="mediumletter">IMMUTABLE VERIFICATION AND RATING SYSTEM</p>
   				<p className="smallletters8">BOTH EMPLOYERS AND EMPLOYEES UNDERGO VETTING DURING PROFILE CREATION TO ENSURE USER LEGITIMACY. TRUSTWORTHY FEEDBACK ON EACH QUEST TRANSACTED AND ITS RECORDED ON BLOCKCHAIN NETWORK.</p>
         </div>
       </div>
 			<div className="feature_item">
-				<a className="join_btn2 pitchdeck" href="images/WORK QUEST pitch deck.pdf">DOWNLOAD OUR PITCH DECK</a>
+				<a className="join_btn2 pitchdeck" href="src/assets/images/WORK QUEST pitch deck.pdf">DOWNLOAD OUR PITCH DECK</a>
 			</div>
 		</div>
 	</div>
@@ -441,12 +441,12 @@ return(<div id="wholepage" className="pageWrapper">
   </div>
 
   	<div className="sale_piechart">
-  		<p className="heading3">TOKEN DISTRIBUTION</p>
-  		<img src="images/ifd.png"/>
+  		<p className="heading2">TOKEN DISTRIBUTION</p>
+  		<img src="src/assets/images/ifd.png"/>
   	</div>
   	<div className="sale_piechart">
   		<p className="heading3">ICO FUNDS DISTRIBUTION</p>
-  		<img src="images/td.png"/>
+  		<img src="src/assets/images/td.png"/>
   	</div>
   </div>
   <div className="section section6" id="road" ref={this.road}>
@@ -467,8 +467,8 @@ return(<div id="wholepage" className="pageWrapper">
       firstAndLastGutter={false}
       activeItemIndex={this.state.activeItemIndex}
       requestToChangeActive={ value => this.setState({ activeItemIndex: value })}
-      rightChevron={<img className="chevron" src="../images/next-page.png"/>}
-      leftChevron={<img className="chevron" src="../images/prev-page.png" />}
+      rightChevron={<img className="chevron" src="../src/assets/images/next-page.png"/>}
+      leftChevron={<img className="chevron" src="../src/assets/images/prev-page.png" />}
       >
       {children}
       </ItemsCarousel>
@@ -487,29 +487,29 @@ return(<div id="wholepage" className="pageWrapper">
           		<li><div className="donut Dorange"></div><p>EVALUATION OF COMPLETED WORK AND FEEDBACK</p></li>
           	</ul>
         </div>
-        <div className="child1-items"><img src="images/Clip.png"></img></div>
+        <div className="child1-items"><img src="src/assets/images/Clip.png"></img></div>
       </div>
-      <div className="bg-logo-container"><img src="images/bg.png" className="bg-z-logo"></img></div>
+      <div className="bg-logo-container"><img src="src/assets/images/bg.png" className="bg-z-logo"></img></div>
     </div>
-    <div className="section sectino6-item2 section6-items">
+    <div className="section section6-item2 section6-items">
     		<p className="heading1">PROBLEMS WE SOLVE ON GLOBAL JOB MARKETPLACE</p>
     		<div className="section6-items-content">
-    			<div className="section6-one-third">
-    				<img src="images/web.png" id="small-logo"></img>
+    			<div className="section6-one-third first">
+    				<img src="src/assets/images/web.png" id="small-logo"></img>
             <div>
-    				    <p className="mediumletter">GLOBAL SKILLS AVAILABILITY AND HIRING MISMATCH</p>
-    				    <p className="smallletters8">THERE IS JOB DEMAND IN SOME COUNTRIES WHILE LABOR SUPPLY IS AVAILABLE ACROSS OTHER COUNTRIES.</p>
+    				 <p className="mediumletter">GLOBAL SKILLS AVAILABILITY AND HIRING MISMATCH</p>
+    				 <p className="smallletters8">THERE IS JOB DEMAND IN SOME COUNTRIES WHILE LABOR SUPPLY IS AVAILABLE ACROSS OTHER COUNTRIES.</p>
             </div>
           </div>
     			<div className="section6-one-third sectin6-middle1">
-    				<img src="images/job.png" id="small-logo"></img>
+    				<img src="src/assets/images/job.png" id="small-logo"></img>
             <div>
               <p className="mediumletter">FRAGMENTED JOB BOARDS</p>
     				  <p className="smallletters8">IN THE EMERGENCE OF DIGITAL PLATFORMS MENY JOB BOARDS TRYING TO MATCH RECRUITERS, EMPLOYERS AND EMPLOYEES HAVE SPRUNG UP. THEY ARE INEFFICIENT AND NOT TRUSTWORTHY. HIGH INDUSTRY FRAGMENTATION CREATES INFORMATION GAP WHICH LEADS TO POOR INTEGRATION OF WORKERS INTO THE PROFFESIONAL COMMUNITY </p>
             </div>
           </div>
-    			<div className="section6-one-third">
-    				<img src="images/central.png" id="small-logo"></img>
+    			<div className="section6-one-third last">
+    				<img src="src/assets/images/central.png" id="small-logo"></img>
             <div>
               <p className="mediumletter">CENTRALIZED PLATFORMS</p>
     				  <p className="smallletters8">EXISTING CENTRALIZED ONLINE MARKETPLACES CONTROL CRITICAL USER DATA INCLUDING FINANCIAL INFORMATION AND ITS DONE WITHOUT CONSENT OF USERS.</p>
@@ -521,7 +521,7 @@ return(<div id="wholepage" className="pageWrapper">
     		<p className="heading1">SOLUTIONS</p>
     		<div className="section6-items-content">
     			<div className="section6-one-third">
-    				<img src="images/tles.png" id="small-logo"></img>
+    				<img src="src/assets/images/tles.png" id="small-logo"></img>
             <div>
                   <p className="mediumletter">TRUST-LESS ECO-SYSTEM</p>
     				      <p className="smallletters8">WORK QUEST UTILIZES BLOCKCHAIN TECHNOLOGY WHICH CREATES AN ECO-SYSTEM WHERE ALL TRANSACTIONS ARE IMPLEMENTED BY AN INDEPENDENT NETWORK
@@ -530,15 +530,15 @@ return(<div id="wholepage" className="pageWrapper">
             </div>
           </div>
     			<div className="section6-one-third sectin6-middle2">
-    				<img src="images/sec.png" id="small-logo"></img>
+    				<img src="src/assets/images/sec.png" id="small-logo"></img>
             <div>
       				<p className="mediumletter">SECURITY</p>
       				<p className="smallletters8">USERS ON THE PLATFORM POSSESS CONTROL OF THEIR
       DATA AND EITHER PARTY TO A CONTRACT WILL HAVE TO SEEK PERMISSION FROM INDIVIDUAL PLATFORM PARTICIPANT IN ORDER TO USE, ACCESS OR AMEND ANY INFORMATION ALTOUGH THIS WORKS IN REAL TIME TO MAKE THE PROCESS FAST AND RELIABLE. </p>
             </div>
         	</div>
-    			<div className="section6-one-third">
-    				<img src="images/decentral.png" id="small-logo"></img>
+    			<div className="section6-one-third last">
+    				<img src="src/assets/images/decentral.png" id="small-logo"></img>
             <div>
               <p className="mediumletter">DECENTRALIZED PROFESSIONAL NETWORK</p>
       				<p className="smallletters8">WORK QUEST PROVIDES A SINGLE INTERFACE PLATFORM YET DECENTRALIZED WITH BOTH PARTIES ACCESSING TRANSACTIONS ON THE JOBS BOARD IN REAL TIME.</p>
@@ -551,17 +551,17 @@ return(<div id="wholepage" className="pageWrapper">
   	  <p className="smallletters9">OUR PROJECTS IS BASED ON WORK QUEST MARKETPLACE</p>
     	<div className="item4-items">
       	<div className="mac_container">
-          <img src="images/macbook2.png" className="macbook" ></img>
-          <img src="images/wqmac.png" className="macbook-wallpaper"></img>
+          <img src="src/assets/images/macbook2.png" className="macbook" ></img>
+          <img src="src/assets/images/wqmac.png" className="macbook-wallpaper"></img>
         </div>
-        <img src="images/BLUE BG TEXT.png" className="blue-wallpaper"></img>
-        <img src="images/xd.png" id="small-logo6"></img>
+        <img src="src/assets/images/BLUE BG TEXT.png" className="blue-wallpaper"></img>
+        <img src="src/assets/images/xd.png" id="small-logo6"></img>
     	</div>
       <div className="section6-item4-content">
           <div>
             <p className="bigletters">WORK COIN PROJECT</p>
             <p className="smallletters8">
-                WORK QUEST IS BASED ON OWN BLOCKCHAIN COUPLED WITH ITS OWN SMART CONTRACT SYSTEM. USERS BOTH EMPLOYERS AND EMPLOYEES WILL BE ABLE TOCREATE PROFILES ON THE PLATFORM AND THEIR DATA IS SAFELY SECURED BY THE BLOCKCHAIN.
+                WORK QUEST IS BASED ON OWN BLOCKCHAIN COUPLED WITH ITS OWN SMART CONTRACT SYSTEM. USERS BOTH EMPLOYERS AND EMPLOYEES WILL BE ABLE TO CREATE PROFILES ON THE PLATFORM AND THEIR DATA IS SAFELY SECURED BY THE BLOCKCHAIN.
             </p>
             <p className="smallletters8">
                 USERS UPON VETTING THEIR PROFILE IS UPDATED ON THE PLATFORM. WHEN CREATING A QUEST USER FILLS IN ALL NECESSARY INFORMATION INCLUDING CONDITIONS FOR EXECUTION, ANNOUNCED COST AND URGENCY OF EXECUTION.
@@ -589,21 +589,21 @@ return(<div id="wholepage" className="pageWrapper">
     firstAndLastGutter={false}
     activeItemIndex={this.state.activeItemIndex1}
     requestToChangeActive={ value => this.setState({ activeItemIndex1: value })}
-    rightChevron={<img className="chevron carousel_chevron" src="../images/next-page.png"/>}
-    leftChevron={<img className="chevron carousel_chevron" src="../images/prev-page.png" />}
+    rightChevron={<img className="chevron carousel_chevron" src="../src/assets/images/next-page.png"/>}
+    leftChevron={<img className="chevron carousel_chevron" src="../src/assets/images/prev-page.png" />}
     >
     <div className="carousel_card">
-      <img src="images/ceo.png"></img>
+      <img src="src/assets/images/ceo.png"></img>
       <p className="mediumletter carousel_heading">Andril Kotsur (CEO)</p>
       <p className="smallletters7 carousel_content">Andrii expertise and experience includes knowledge of digital currency, how to manage a highly skilled team, building relationships and driving the company forward. Founder and main ideologue of the project concept.</p>
     </div>
     <div className="carousel_card">
-      <img src="images/Abhishek Kishor.png"></img>
+      <img src="src/assets/images/Abhishek Kishor.png"></img>
       <p className="mediumletter carousel_heading">Abhishek  Kishor</p>
       <p className="smallletters7 carousel_content">Blockchain developer and Network engineer. He is certified in CCNA R&S and CCNA security. He has worked on Ethereum and Hyperledger on the various project including Government project. He is also passionate about Hacking & Security.</p>
     </div>
     <div className="carousel_card">
-      <img src="images/Abhishek Krishna.png"></img>
+      <img src="src/assets/images/Abhishek Krishna.png"></img>
       <p className="mediumletter carousel_heading">Abhishek Krishna</p>
       <p className="smallletters7 carousel_content">Abhishek is a Tech Entrepreneur and started his first venture 6 years ago. Since then, he has built several products and has consulted and advised a few startups and corporations. He started coding in school and has a keen sense of product design too. He specializes in building product and technology teams. He currently runs Kcolbchain and Ojam.</p>
     </div>
@@ -630,8 +630,8 @@ return(<div id="wholepage" className="pageWrapper">
          <input type="submit" className="join_btn contact_submit" value="SEND" />
     </form>
     <div className="contact_details">
-    <p className="smallletters2">+044 0123 4567</p>
-  	 <p className="smallletters2">feedback@workquest.co<br />join us on telegram</p>
+    <p className="smallletters2"><br />              +044 0123 4567</p>
+  	<p className="smallletters2">feedback@workquest.co<br />join us on telegram</p>
     </div>
   </div>
   <div className="section section9" id="faq" ref={this.faq}>
@@ -663,7 +663,7 @@ return(<div id="wholepage" className="pageWrapper">
             <p className="smallletters9">WORK QUEST TARGETS JOB SEEKERS AND EMPLOYERS WHO ARE WORLDS APART AND CAN PROVIDE THEIR SERVICES VIA AN ONLINE PLATORM WHILE GETTING THE BEST AWARD<br /><br /><br /><br /><br /><br /><br /></p>
           </div>
         </div>
-        <div  className={this.state.faq_active == 'ico'? 'faq-items' : 'faq-items display_none_className'}>
+        <div className={this.state.faq_active == 'ico'? 'faq-items' : 'faq-items display_none_className'}>
           <p className="mediumletter2 faq-heading-item">ICO</p>
           <div className="faq-item">
             <p className="blueletters2">WHY DO YOU NEED AN ICO?</p>
@@ -686,11 +686,11 @@ return(<div id="wholepage" className="pageWrapper">
       </div>
     </div>
   </div>
-  <img src="images/footer background.png" id="small-logo7"></img>
+  <img src="src/assets/images/footer background.png" id="small-logo7"></img>
   <div id="footer">
     <div className="footer_wrapper">
     <div className="footer_first_section">
-      <div className="footer_section_image"><img src="images/Logotype.png"/></div>
+      <div className="footer_section_image"><img src="src/assets/images/Logotype.png"/></div>
       <ul className="footer_links">
     				<li><a onClick={this.scrollTofun.bind(this,'about')}>WHAT IS WORK COIN?</a></li>
     				<li><a onClick={this.scrollTofun.bind(this,'sale')}>TOKEN SALE</a></li>
@@ -711,7 +711,7 @@ return(<div id="wholepage" className="pageWrapper">
       </ul>
     </div>
     <div className="footer_foot">
-      <img src="images/croped_logo.png" />
+      <img src="src/assets/images/croped_logo.png" />
       <div>
         <p>WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
         <p>COPYRIGHT © 2019, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR RESPECTIVE OWNERS</p>

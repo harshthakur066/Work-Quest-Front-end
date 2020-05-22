@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './css/dashboard.css';
-import UserDashboard from './Dashboard/userDashboard.js';
-import UserToken from './Dashboard/userToken.js';
-import UserProfile from './Dashboard/userProfile.js';
-import UserTransaction from './Dashboard/userTransaction.js';
-import UserWallet from './Dashboard/userWallet.js';
+import '../../assets/css/dashboard.css';
+import UserDashboard from '../../assets/Dashboard/userDashboard.js';
+import UserToken from '../../assets/Dashboard/userToken.js';
+import UserProfile from '../../assets/Dashboard/userProfile.js';
+import UserTransaction from '../../assets/Dashboard/userTransaction.js';
+import UserWallet from '../../assets/Dashboard/userWallet.js';
 
 class Dashboard extends Component{
 	constructor(props) {
@@ -33,14 +33,14 @@ class Dashboard extends Component{
 		return (
 <div id="wholepage_dashboard">
 	<div id="left-menu">
-		<img src="images/wq.png" id="logo" class="brand_logo" />
+		<img src="../assets/images/wq.png" id="logo" class="brand_logo" />
 			<div class="user_social">
-				<img src="images/Color Overlay.png" class="social_icons"/>
-				<img src="images/photo1.png" class="user_img"/>
+				<img src="../assets/images/Color Overlay.png" class="social_icons"/>
+				<img src="../assets/images/photo1.png" class="user_img"/>
 			</div>
 			<div class="menu_tab">
 				<hr/>
-				<img src="images/menu.png"/>
+				<img src="../assets/images/menu.png"/>
 			</div>
 		<div class="tab">
 	  	<button className={`tablinks ${this.state.displayContext == "dashboard"?"active":""}`} onClick={() => this.tabHandler("dashboard")} ><img src="images/dashboard icon.png" class="tab-icon" />Dashboard</button>

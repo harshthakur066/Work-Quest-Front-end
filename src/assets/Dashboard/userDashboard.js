@@ -49,7 +49,7 @@ export default class UserDashboard extends Component{
         </div>
         <div id="ico-start">
           <div>Test container <button onClick={this.handleTest}>Click to check</button></div>
-          <img src="images/coin.png" id="coin" />
+          <img src="../../images/coin.png" id="coin" />
           <p id="ico-text">ICO WILL BE STARTED IN</p>
           <div class="ico_counter">
             <span id="id_days"></span><p>DAYS</p>

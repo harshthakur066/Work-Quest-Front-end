@@ -2,9 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-   entry: './main.js',
+   entry: './src/components/app/main.js',
    output: {
-      path: path.join(__dirname, '/bundle'),
+      path: path.join(__dirname, './public/bundle'),
       filename: 'index_bundle.js'
    },
    devServer: {
@@ -34,7 +34,7 @@ test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
    },
    plugins:[
       new HtmlWebpackPlugin({
-         template: './index.html'
+         template: './public/index.html'
       })
    ]
 }
