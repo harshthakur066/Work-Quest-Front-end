@@ -291,7 +291,6 @@ return(<div id="wholepage" className="pageWrapper">
     	<div className="first_items first_text">
     		<p className="bigletters">WORK QUEST ICO STARTUP A GLOBAL JOB MARKETPLACE FOR <br></br> ANY TYPE OF WORK.</p>
         <div className="first_text_item">
-        	<p className="smallletters">WORK QUEST ICO STARTUP <br></br>A GLOBAL JOB <br></br>MARKETPLACE FOR <br></br>ANY TYPE OF WORK.</p>
         </div>
         <a id="join" className="join_btn btn_signup" onClick={this.handleForm.bind(this,'signup')}>SIGN UP TO JOIN</a>
       </div>

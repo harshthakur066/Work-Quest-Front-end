@@ -45,7 +45,7 @@ margin:0;
 .mediumletter3{font-size:0.6rem; color:#000000;}
 .blueletters{color:#0C82C3; margin-top:0%; font-size: 1rem;}
 .blueletters2{color:#0C82C3;margin:0; font-size:0.8rem;}
-.bigletters{font-size:1.5rem; font-weight: bold; line-height:1.9rem; color: #ffffff; margin:0;}
+.bigletters{font-size:1.5rem; line-height:25px;font-weight: bold; line-height:1.9rem; color: #ffffff; margin:0;}
 .sale_info_item .blueletters{
 	margin-top: 5px;
 }
