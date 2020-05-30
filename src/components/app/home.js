@@ -260,7 +260,7 @@ return(<div id="wholepage" className="pageWrapper">
           </div>
         </div>
         <div className="input_item">
-          <label className="input_label" htmlFor="eMail">MAIL</label>
+          <label className="input_label" htmlFor="eMail">EMAIL ID</label>
           <div className="login_input">
             <img className="log_img" src="src/assets/images/mail.png"  />
             <input type="text" placeholder="E-Mail" name="eMail" onChange={this.handleSignupChange} required />
@@ -348,12 +348,14 @@ return(<div id="wholepage" className="pageWrapper">
 			<div className="mission_item">
 				<img src="src/assets/images/global.png" ></img>
         <div className="mission_content">
-  				<p className="mediumletter">GLOBAL SYSTEM<br></br> AND SECURE</p>
-  				<p className="smallletters8">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p>
+		<p className="mediumletter">GLOBAL SYSTEM<br></br> AND SECURE</p>
+		<p className="smallletters8">WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br> CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND<br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK. </p>
         </div>
       </div>
-		</div>
-		<a  className="join_btn btn_whitepaper" href="src/assets/images/WORK QUEST white paper.pdf">DOWNLOAD WHITEPAPER</a>
+      
+	</div>
+	<a  className="join_btn btn_whitepaper" href="src/assets/images/WORK QUEST white paper.pdf">DOWNLOAD WHITEPAPER</a>
+	
 	</div>
 	<div className="section section4">
 		<p className="heading1">OUR FEATURES</p>
@@ -691,13 +693,15 @@ return(<div id="wholepage" className="pageWrapper">
     <div className="footer_first_section">
       <div className="footer_section_image"><img src="src/assets/images/Logotype.png"/></div>
       <ul className="footer_links">
-    				<li><a onClick={this.scrollTofun.bind(this,'about')}>WHAT IS WORK COIN?</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'sale')}>TOKEN SALE</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'road')}>ROAD MAP</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'mvp')}>MVP</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'team')}>TEAM</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'contact')}>CONTACT</a></li>
-    				<li><a onClick={this.scrollTofun.bind(this,'faq')}>FAQ</a></li>
+      
+	<li><a onClick={this.scrollTofun.bind(this,'about')}>WHAT IS WORK COIN?</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'sale')}>TOKEN SALE</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'road')}>ROAD MAP</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'mvp')}>MVP</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'team')}>TEAM</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'contact')}>CONTACT</a></li>
+	<li><a onClick={this.scrollTofun.bind(this,'faq')}>FAQ</a></li>
+	
     	</ul>
     </div>
     	<ul className="footer_social_links">
@@ -713,19 +717,13 @@ return(<div id="wholepage" className="pageWrapper">
       <img src="src/assets/images/croped_logo.png" />
       <div>
         <p>WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.</p>
-        <p>COPYRIGHT © 2019, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR RESPECTIVE OWNERS</p>
+        <p>COPYRIGHT © 2020, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR RESPECTIVE OWNERS</p>
       </div>
    </div>
   </div>
 </div>);}
 
-//---------------------- For carousel ------------------------------------------
-// changeActiveItem(activeItemIndex){this.setState({ activeItemIndex });}
-// createChildren(n){range(n).map(i => <div key={i} style={{ height: 200, background: '#333' }}>{i}</div>);}
 
-
-
-// Function handling for login and signup
 
 
 //---------------------- checks login of user ----------------------------------
