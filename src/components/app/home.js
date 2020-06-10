@@ -130,7 +130,10 @@ class Home extends Component {
             canvasclassName="example"
           />
         </div>
-        <div className="navbar">
+        <a href="#">
+          <img src="src/assets/images/logo.png" className="brand"></img>
+        </a>
+        {/* <div className="navbar">
           <nav>
             <div className="nav_items">
               <div>
@@ -152,7 +155,7 @@ class Home extends Component {
             <div className="nav_items_wrapper " id="myNavbar">
               <div className="wqNav nav_items">
                 <div className="nav_link_container">
-                  <div className="wqname">
+                  <div className="">
                     <img src="src/assets/images/wqname.png"></img>
                   </div>
                   <ul className="nav_link_items">
@@ -215,13 +218,6 @@ class Home extends Component {
                   </ul>
                   <div className="nav_link_items">
                     <a
-                      id="signup"
-                      className="account nav-links"
-                      onClick={this.handleForm.bind(this, "signup")}
-                    >
-                      SIGN UP
-                    </a>
-                    <a
                       id="login"
                       className="account nav-links"
                       onClick={this.handleForm.bind(this, "login")}
@@ -236,7 +232,7 @@ class Home extends Component {
               </div>
             </div>
           </nav>
-        </div>
+        </div>*/}
         <div
           id="login-form"
           style={{ display: this.state.login ? "block" : "none" }}
@@ -539,7 +535,6 @@ class Home extends Component {
               <p
                 style={{
                   marginBottom: "5em",
-                  marginTop: "-60%",
                   fontSize: "34px",
                   fontWeight: "bold",
                 }}
