@@ -417,6 +417,7 @@ body {
 .mission_item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 40px 0;
 }
 
@@ -443,15 +444,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin: 1rem;
 }
 .feature_item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-around;
+  margin-bottom: 3%;
 }
 .feature_item > img {
   width: 11rem;
@@ -480,7 +481,7 @@ body {
 }
 .pitchdeck {
   margin: 1rem 0.5rem 5rem 0.5rem;
-  padding: 0.9rem 5rem;
+  padding: 0.9rem 1rem;
 }
 
 .section5 {
@@ -1596,10 +1597,14 @@ input[type="text"]::placeholder {
   }
   .feature_items {
     margin-top: 0.9rem;
-    max-width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .feature_item {
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .feature_item > div {
     margin: 0 0 0.3rem 0.2rem;

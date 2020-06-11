@@ -76,6 +76,7 @@ class Home extends Component {
     const { activeItemIndex, children } = this.state;
     const isActive = this.state.navActive;
     return (
+      // Whole Page
       <div id="wholepage" className=" pageWrapper">
         <div
           id="particles"
@@ -87,6 +88,7 @@ class Home extends Component {
           }}
         >
           <Particles
+            // Particle JS
             params={{
               particles: {
                 number: {
@@ -652,7 +654,10 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/bi.png"></img>
               <div className="mission_content">
-                <p style={{ marginBottom: "30px" }} className="mediumletter">
+                <p
+                  style={{ marginBottom: "30px", textAlign: "center" }}
+                  className="mediumletter"
+                >
                   BLOCKCHAIN <br></br>INFRASTRUCTURE
                 </p>
                 <p className="smallletters8">
@@ -665,7 +670,10 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/eti.png"></img>
               <div className="mission_content">
-                <p style={{ marginBottom: "30px" }} className="mediumletter">
+                <p
+                  style={{ marginBottom: "30px", textAlign: "center" }}
+                  className="mediumletter"
+                >
                   EASY TOKEN <br></br>INTEGRATION
                 </p>
                 <p className="smallletters8">
@@ -678,7 +686,10 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/global.png"></img>
               <div className="mission_content">
-                <p style={{ marginBottom: "30px" }} className="mediumletter">
+                <p
+                  style={{ marginBottom: "30px", textAlign: "center" }}
+                  className="mediumletter"
+                >
                   GLOBAL SYSTEM<br></br> AND SECURE
                 </p>
                 <p className="smallletters8">
@@ -697,79 +708,141 @@ class Home extends Component {
           </a>
         </div>
         <div className="section section4">
-          <p className="heading1">OUR FEATURES</p>
+          <p style={{ textAlign: "center" }} className="heading1">
+            OUR FEATURES
+          </p>
           <div className="feature_items">
             <div className="feature_item">
-              <img src="src/assets/images/ltc.png"></img>
-              <div>
-                <p className="mediumletter">
-                  LOW<br></br>TRANSACTION COST
-                </p>
-                <p className="smallletters8">
-                  ON OUR WORK QUEST PLATFORM TRANSACTIONAL FEE IS SET AT 1% OF
-                  THE TOTAL USER INCOME AGAINST 7-20% FEE CHARGED BY OTHER
-                  MARKETPLACES. ZERO COST TO LIST NEW EMPLOYEES.
-                </p>
+              <div id="1">
+                <div className="mission_item">
+                  <img src="src/assets/images/ltc.png"></img>
+                  <div className="mission_content">
+                    <p
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                      className="mediumletter"
+                    >
+                      LOW TRANSACTION <br /> COST
+                    </p>
+                    <p
+                      style={{ textAlign: "center" }}
+                      className="smallletters8"
+                    >
+                      ON OUR WORK QUEST PLATFORM <br /> TRANSACTIONAL FEE IS SET
+                      AT 1% <br />
+                      OF THE TOTAL USER INCOME <br /> AGAINST 7-20% FEE CHARGED
+                      BY <br />
+                      OTHER MARKETPLACES. <br /> ZERO COST TO LIST NEW <br />{" "}
+                      EMPLOYEES.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="2">
+                <div className="mission_item">
+                  <img src="src/assets/images/it.png"></img>
+                  <div className="mission_content">
+                    <p
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                      className="mediumletter"
+                    >
+                      INNOVATIVE<br></br>TECHNOLOGY
+                    </p>
+                    <p
+                      style={{ textAlign: "center" }}
+                      className="smallletters8"
+                    >
+                      IT IS AN ONLINE JOB MARKETPLACE <br /> POWERED BY
+                      BLOCKCHAIN THUS <br />
+                      TAPPING INTO DECENTRALIZATION <br /> FEATURES OF THIS
+                      TECHNOLOGY. ANY <br /> ONE AROUND THE WORLD CAN USE <br />{" "}
+                      THE PLATFORM AND BE PAID USING <br /> OUR CRYPTOCURRENCY
+                      WORK COIN.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="3">
+                <div className="mission_item">
+                  <img src="src/assets/images/rt.png"></img>
+                  <div className="mission_content">
+                    <p
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                      className="mediumletter"
+                    >
+                      REAL TIME
+                    </p>
+                    <p
+                      style={{ textAlign: "center" }}
+                      className="smallletters8"
+                    >
+                      WORK QUEST USES SMART CONTRACT <br /> TECHNOLOGY TO
+                      FACILLITATE REAL <br /> TIME TRANSACTIONS ELIMINATING{" "}
+                      <br /> DELAYS CAUSED BY THIRD PARTIES. IT <br /> TAKES A
+                      FEW MINUTES TO MATCH JOB <br /> DEMAND AND SKILLS AS IT IS
+                      ALSO <br /> LOCATION BASED.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="feature_item">
-              <img src="src/assets/images/it.png"></img>
-              <div>
-                <p className="mediumletter">
-                  INNOVATIVE<br></br>TECHNOLOGY
-                </p>
-                <p className="smallletters8">
-                  IT IS AN ONLINE JOB MARKETPLACE POWERED BY BLOCKCHAIN THUS
-                  TAPPING INTO DECENTRALIZATION FEATURES OF THIS TECHNOLOGY. ANY
-                  ONE AROUND THE WORLD CAN USE THE PLATFORM AND BE PAID USING
-                  OUR CRYPTOCURRENCY WORK COIN.
-                </p>
+              <div id="4">
+                <div className="mission_item">
+                  <img src="src/assets/images/ss.png"></img>
+                  <div className="mission_content">
+                    <p
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                      className="mediumletter"
+                    >
+                      SAFE AND SECURE
+                    </p>
+                    <p
+                      style={{ textAlign: "center" }}
+                      className="smallletters8"
+                    >
+                      THE PLATFORM IS SAFE AND SECURE <br /> TO USE AS THE USE
+                      OF BLOCKCHAIN <br /> TECHNOLOGY ALLOWS HIGH DATA <br />{" "}
+                      ENCRYPTION WHICH HELPS IN <br /> HARNESSING SECURITY OF
+                      THE <br /> PLATFORM. AN ESCROW SYSTEM IS <br /> INTEGRATED
+                      ON THE PLATFORM TO <br /> ELIMINATE FINANCIAL FRAUD.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="feature_item">
-              <img src="src/assets/images/rt.png"></img>
-              <div>
-                <p className="mediumletter">REAL TIME</p>
-                <p className="smallletters8">
-                  WORK QUEST USES SMART CONTRACT TECHNOLOGY TO FACILLITATE REAL
-                  TIME TRANSACTIONS ELIMINATING DELAYS CAUSED BY THIRD PARTIES.
-                  IT TAKES A FEW MINUTES TO MATCH JOB DEMAND AND SKILLS AS IT IS
-                  ALSO LOCATION BASED.
-                </p>
+              <div id="5">
+                <div className="mission_item">
+                  <img src="src/assets/images/ivrs.png"></img>
+                  <div className="mission_content">
+                    <p
+                      style={{ marginBottom: "30px", textAlign: "center" }}
+                      className="mediumletter"
+                    >
+                      IMMUTABLE VERIFICATION AND <br /> RATING SYSTEM
+                    </p>
+                    <p
+                      style={{ textAlign: "center" }}
+                      className="smallletters8"
+                    >
+                      BOTH EMPLOYERS AND EMPLOYEES <br /> UNDERGO VETTING DURING
+                      PROFILE <br /> CREATION TO ENSURE USER <br /> LEGITIMACY.
+                      TRUSTWORTHY <br />
+                      FEEDBACK ON EACH QUEST <br /> TRANSACTED AND ITS RECORDED
+                      ON <br />
+                      BLOCKCHAIN NETWORK.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="feature_item">
-              <img src="src/assets/images/ss.png"></img>
-              <div>
-                <p className="mediumletter">SAFE AND SECURE</p>
-                <p className="smallletters8">
-                  THE PLATFORM IS SAFE AND SECURE TO USE AS THE USE OF
-                  BLOCKCHAIN TECHNOLOGY ALLOWS HIGH DATA ENCRYPTION WHICH HELPS
-                  IN HARNESSING SECURITY OF THE PLATFORM. AN ESCROW SYSTEM IS
-                  INTEGRATED ON THE PLATFORM TO ELIMINATE FINANCIAL FRAUD.
-                </p>
+              <div id="6">
+                <div className="mission_item">
+                  <a
+                    className="join_btn2 pitchdeck"
+                    href="src/assets/images/WORK QUEST pitch deck.pdf"
+                  >
+                    DOWNLOAD OUR PITCH DECK
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="feature_item">
-              <img src="src/assets/images/ivrs.png"></img>
-              <div>
-                <p className="mediumletter">
-                  IMMUTABLE VERIFICATION AND RATING SYSTEM
-                </p>
-                <p className="smallletters8">
-                  BOTH EMPLOYERS AND EMPLOYEES UNDERGO VETTING DURING PROFILE
-                  CREATION TO ENSURE USER LEGITIMACY. TRUSTWORTHY FEEDBACK ON
-                  EACH QUEST TRANSACTED AND ITS RECORDED ON BLOCKCHAIN NETWORK.
-                </p>
-              </div>
-            </div>
-            <div className="feature_item">
-              <a
-                className="join_btn2 pitchdeck"
-                href="src/assets/images/WORK QUEST pitch deck.pdf"
-              >
-                DOWNLOAD OUR PITCH DECK
-              </a>
             </div>
           </div>
         </div>
