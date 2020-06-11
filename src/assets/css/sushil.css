@@ -488,7 +488,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin: 1rem;
   margin-top: 3rem;
 }
@@ -499,6 +499,13 @@ body {
   margin: 0.5rem 0;
   padding: 0 1.2rem;
 }
+.token-view {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5rem 0;
+}
 .countdown {
   display: flex;
   flex-direction: column;
@@ -506,7 +513,7 @@ body {
   align-items: center;
   background-image: linear-gradient(to bottom, #283f79, #0c82c3);
   border-radius: 65px;
-  padding: 2.5rem 4.5rem;
+  padding: 0.5rem 5rem;
   margin: 1rem 0 2rem 0;
 }
 .countdown > p {
@@ -514,14 +521,14 @@ body {
 }
 
 .countdown-item {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
 }
 .countdown-boxes {
-  height: 3rem;
-  width: 3rem;
+  height: 6rem;
+  width: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -552,7 +559,7 @@ body {
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
   padding: 0.7rem 1.4rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 .timer-button:hover {
   background-position: left bottom;

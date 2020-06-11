@@ -848,76 +848,79 @@ class Home extends Component {
         </div>
         <div className="section section5" id="sale" ref={this.sale}>
           <p className="heading1">TOKEN SALE INFO</p>
-          <p className="smallletters9">
-            THE WORK COIN WILL BE ISSUED AS AN INDEPENDENT BLOCKCHAIN WORK QUEST
-            AND WE WILL ISSUE 2 BILLION TOKENS
-          </p>
-          <div className="countdown">
-            <p className="mediumletter">ICO WILL BE STARTED IN</p>
-            <ul className="countdown-item">
-              <li>
-                <div id="exbox1" className="countdown-boxes">
-                  {this.state.timer.days}
-                </div>
-                <p>DAYS</p>
-              </li>
-              <li>
-                <div id="exbox2" className="countdown-boxes">
-                  {this.state.timer.hours}
-                </div>
-                <p>HOURS</p>
-              </li>
-              <li>
-                <div id="exbox3" className="countdown-boxes">
-                  {this.state.timer.minutes}
-                </div>
-                <p>MINUTES</p>
-              </li>
-              <li>
-                <div id="exbox4" className="countdown-boxes">
-                  {this.state.timer.seconds}
-                </div>
-                <p>SECONDS</p>
-              </li>
-            </ul>
-            <a className="timer-button" href="#">
-              JOIN AND BUY TOKEN NOW
-            </a>
+          <h4 style={{ textAlign: "center" }}>
+            THE WORK COIN WILL BE ISSUED AS AN INDEPENDENT BLOCKCHAIN <br />{" "}
+            WORK QUEST AND WE WILL ISSUE 2 BILLION TOKENS
+          </h4>
+          <div className="token-view">
+            <div className="countdown">
+              <p className="mediumletter">ICO WILL BE STARTED IN</p>
+              <ul className="countdown-item">
+                <li>
+                  <div id="exbox1" className="countdown-boxes">
+                    {this.state.timer.days}
+                  </div>
+                  <p>DAYS</p>
+                </li>
+                <li>
+                  <div id="exbox2" className="countdown-boxes">
+                    {this.state.timer.hours}
+                  </div>
+                  <p>HOURS</p>
+                </li>
+                <li>
+                  <div id="exbox3" className="countdown-boxes">
+                    {this.state.timer.minutes}
+                  </div>
+                  <p>MINUTES</p>
+                </li>
+                <li>
+                  <div id="exbox4" className="countdown-boxes">
+                    {this.state.timer.seconds}
+                  </div>
+                  <p>SECONDS</p>
+                </li>
+              </ul>
+              <a className="timer-button" href="#">
+                JOIN AND BUY TOKEN NOW
+              </a>
+            </div>
+            <div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">OUR START</p>
+                <p className="blueletters">Jun 1, 2019 (12:00AM GMT)</p>
+              </div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">END</p>
+                <p className="blueletters">Aug 1, 2019 (12:00AM GMT)</p>
+              </div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">ACCEPTABLE CURRENCIES</p>
+                <p className="blueletters">ETH, BTC, LTC & FIAT</p>
+              </div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">NUMBER OF TOKENS FOR SALE</p>
+                <p className="blueletters">600,000,000 WRC</p>
+              </div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">TOKENS EXCHANGE RATE</p>
+                <p className="blueletters">1 ETH = 140 WRC</p>
+              </div>
+              <div className="sale_info_item">
+                <p className="mediumletter2">MINIMUM TRANSCATION AMOUNT</p>
+                <p className="blueletters">$50</p>
+              </div>
+            </div>
           </div>
-          <div className="sale_info">
-            <div className="sale_info_item">
-              <p className="mediumletter2">OUR START</p>
-              <p className="blueletters">Jun 1, 2019 (12:00AM GMT)</p>
+          <div className="token-view" style={{ flexDirection: "row" }}>
+            <div className="sale_piechart">
+              <p className="heading2">TOKEN DISTRIBUTION</p>
+              <img src="src/assets/images/ifd.png" />
             </div>
-            <div className="sale_info_item">
-              <p className="mediumletter2">END</p>
-              <p className="blueletters">Aug 1, 2019 (12:00AM GMT)</p>
+            <div className="sale_piechart">
+              <p className="heading3">ICO FUNDS DISTRIBUTION</p>
+              <img src="src/assets/images/td.png" />
             </div>
-            <div className="sale_info_item">
-              <p className="mediumletter2">ACCEPTABLE CURRENCIES</p>
-              <p className="blueletters">ETH, BTC, LTC & FIAT</p>
-            </div>
-            <div className="sale_info_item">
-              <p className="mediumletter2">NUMBER OF TOKENS FOR SALE</p>
-              <p className="blueletters">600,000,000 WRC</p>
-            </div>
-            <div className="sale_info_item">
-              <p className="mediumletter2">TOKENS EXCHANGE RATE</p>
-              <p className="blueletters">1 ETH = 140 WRC</p>
-            </div>
-            <div className="sale_info_item">
-              <p className="mediumletter2">MINIMUM TRANSCATION AMOUNT</p>
-              <p className="blueletters">$50</p>
-            </div>
-          </div>
-
-          <div className="sale_piechart">
-            <p className="heading2">TOKEN DISTRIBUTION</p>
-            <img src="src/assets/images/ifd.png" />
-          </div>
-          <div className="sale_piechart">
-            <p className="heading3">ICO FUNDS DISTRIBUTION</p>
-            <img src="src/assets/images/td.png" />
           </div>
         </div>
         <div className="section section6" id="road" ref={this.road}>
