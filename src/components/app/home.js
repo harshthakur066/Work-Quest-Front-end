@@ -712,7 +712,7 @@ class Home extends Component {
             OUR FEATURES
           </p>
           <div className="feature_items">
-            <div className="feature_item">
+            <div style={{ alignItems: "flex-start" }} className="feature_item">
               <div id="1">
                 <div className="mission_item">
                   <img src="src/assets/images/ltc.png"></img>
@@ -937,9 +937,9 @@ class Home extends Component {
               }
               enablePlaceholder={true}
               numberOfPlaceholderItems={0}
-              numberOfCards={1}
+              numberOfCards={3}
               gutter={12}
-              slidesToScroll={1}
+              slidesToScroll={3}
               chevronWidth={73}
               outsideChevron={true}
               showSlither={false}
@@ -965,41 +965,57 @@ class Home extends Component {
             </ItemsCarousel>
           </div>
           <div className="section section6-item1">
-            <p className="heading1">WHAT TECHNOLOGY IS BASED</p>
+            <p className="heading1">
+              WHAT <br /> TECHNOLOGY <br /> IS BASED
+            </p>
             <p className="smallletters9">
-              WORK QUEST BASED ON BLOCKCHAIN TECHNOLOGY. BLOCKCHAIN TECHNOLOGY
-              IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC TRANSACTIONS THAT
-              CAN BE PROGRAMMED TO RECORD NOT JUST FINANCIAL TRANSACTIONS BUT
-              VIRTUALLY EVERYTHING OF VALUE. OUR OBJECTIVE IS TO DEVELOP OWN
-              BLOCKCHAIN KNOWN AS WORK QUEST BLOCKCHAIN AND WILL ALSO INTEGRATE
-              SMART CONTRACTS TO EASE COMPLETION AND COMMUNICATION BETWEEN AN
-              EMPLOYER AND EMPLOYEE IN THE PLATFORM
+              WORK QUEST BASED ON BLOCKCHAIN TECHNOLOGY. <br /> BLOCKCHAIN
+              TECHNOLOGY IS AN INCORRUPTIBLE DIGITAL LEDGER OF ECONOMIC
+              TRANSACTIONS THAT CAN <br /> BE PROGRAMMED TO RECORD NOT JUST
+              FINANCIAL TRANSACTIONS BUT VIRTUALLY EVERYTHING OF VALUE. <br />
+              OUR OBJECTIVE IS TO DEVELOP OWN BLOCKCHAIN KNOWN AS WORK NET
+              BLOCKCHAIN AND WILL ALSO <br /> INTEGRATE SMART CONTRACTS TO EASE
+              COMPLETION AND <br /> COMMUNICATION BETWEEN AN EMPLOYER AND
+              EMPLOYEE IN THE PLATFORM
             </p>
             <div className="item1-child">
               <div className="child1-items">
-                <p className="mediumletter2">
-                  ELEMENTS OF WORK QUEST PLATFORM AND HOW THE SYSTEM WORKS:
+                <p style={{ fontSize: "28px", fontWeight: "700" }}>
+                  ELEMENTS OF WORK QUEST <br /> PLATFORM AND HOW THE <br />{" "}
+                  SYSTEM WORKS:
                 </p>
                 <ul className="child1-list mediumletter2">
                   <li>
-                    <div className="d.7onut Dblue"></div>
-                    <p>USER REGISTRATION</p>
+                    <div className="donut Dblue"></div>
+                    <p style={{ fontSize: "23px", fontWeight: "700" }}>
+                      USER REGISTRATION
+                    </p>
                   </li>
                   <li>
                     <div className="donut Dgreen"></div>
-                    <p>QUEST CREATION</p>
+                    <p style={{ fontSize: "23px", fontWeight: "700" }}>
+                      QUEST CREATION
+                    </p>
                   </li>
                   <li>
                     <div className="donut Dgrey"></div>
-                    <p>EMPLOYEE SEARCHING</p>
+                    <p style={{ fontSize: "23px", fontWeight: "700" }}>
+                      EMPLOYEE SEARCHING
+                    </p>
                   </li>
                   <li>
                     <div className="donut Dyellow"></div>
-                    <p>SMART CONTRACT</p>
+                    <p style={{ fontSize: "23px", fontWeight: "700" }}>
+                      SMART CONTRACT
+                    </p>
                   </li>
                   <li>
                     <div className="donut Dorange"></div>
-                    <p>EVALUATION OF COMPLETED WORK AND FEEDBACK</p>
+                    <p style={{ fontSize: "23px", fontWeight: "700" }}>
+                      <div>EVALUATION OF </div>
+                      <br /> <div> COMPLETED WORK</div> <br />
+                      <div> AND FEEDBACK</div>
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -1010,46 +1026,100 @@ class Home extends Component {
             <div className="bg-logo-container">
               <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
             </div>
+            <div className="bg-logo-container2">
+              <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
+            </div>
           </div>
           <div className="section section6-item2 section6-items">
             <p className="heading1">
               PROBLEMS WE SOLVE ON GLOBAL JOB MARKETPLACE
             </p>
             <div className="section6-items-content">
-              <div className="section6-one-third first">
-                <img src="src/assets/images/web.png" id="small-logo"></img>
-                <div>
-                  <p className="mediumletter">
-                    GLOBAL SKILLS AVAILABILITY AND HIRING MISMATCH
-                  </p>
-                  <p className="smallletters8">
-                    THERE IS JOB DEMAND IN SOME COUNTRIES WHILE LABOR SUPPLY IS
-                    AVAILABLE ACROSS OTHER COUNTRIES.
-                  </p>
-                </div>
-              </div>
-              <div className="section6-one-third sectin6-middle1">
-                <img src="src/assets/images/job.png" id="small-logo"></img>
-                <div>
-                  <p className="mediumletter">FRAGMENTED JOB BOARDS</p>
-                  <p className="smallletters8">
-                    IN THE EMERGENCE OF DIGITAL PLATFORMS MENY JOB BOARDS TRYING
-                    TO MATCH RECRUITERS, EMPLOYERS AND EMPLOYEES HAVE SPRUNG UP.
-                    THEY ARE INEFFICIENT AND NOT TRUSTWORTHY. HIGH INDUSTRY
-                    FRAGMENTATION CREATES INFORMATION GAP WHICH LEADS TO POOR
-                    INTEGRATION OF WORKERS INTO THE PROFFESIONAL COMMUNITY{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="section6-one-third last">
-                <img src="src/assets/images/central.png" id="small-logo"></img>
-                <div>
-                  <p className="mediumletter">CENTRALIZED PLATFORMS</p>
-                  <p className="smallletters8">
-                    EXISTING CENTRALIZED ONLINE MARKETPLACES CONTROL CRITICAL
-                    USER DATA INCLUDING FINANCIAL INFORMATION AND ITS DONE
-                    WITHOUT CONSENT OF USERS.
-                  </p>
+              <div>
+                <div
+                  style={{ alignItems: "flex-start", marginTop: "-10px" }}
+                  className="feature_item"
+                >
+                  <div id="1">
+                    <div style={{ marginTop: "65px" }} className="mission_item">
+                      <img
+                        src="src/assets/images/web.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          GLOBAL SKILLS <br /> AVAILABILITY AND <br /> HIRING
+                          MISMATCH
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          THERE IS JOB DEMAND IN <br /> SOME COUNTRIES WHILE{" "}
+                          <br /> LABOR SUPPLY IS <br />
+                          AVAILABLE ACROSS <br /> OTHER COUNTRIES.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="2">
+                    <div style={{ marginTop: "65px" }} className="mission_item">
+                      <img
+                        src="src/assets/images/job.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          FRAGMENTED <br /> JOB BOARDS
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          IN THE EMERGENCE OF <br /> DIGITAL PLATFORMS MENY{" "}
+                          <br /> JOB BOARDS TRYING TO <br /> MATCH RECRUITERS,{" "}
+                          <br /> EMPLOYERS AND EMPLOYEES <br />
+                          HAVE SPRUNG UP. THEY ARE <br /> INEFFICIENT AND NOT{" "}
+                          <br />
+                          TRUSTWORTHY. HIGH <br /> INDUSTRY FRAGMENTATION <br />{" "}
+                          CREATES INFORMATION GAP <br /> WHICH LEADS TO POOR{" "}
+                          <br /> INTEGRATION OF WORKERS <br /> INTO THE
+                          PROFFESIONAL <br /> COMMUNITY
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="3">
+                    <div style={{ marginTop: "65px" }} className="mission_item">
+                      <img
+                        src="src/assets/images/central.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          CENTRALIZED <br /> PLATFORMS
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          EXISTING CENTRALIZED <br /> ONLINE MARKETPLACES <br />{" "}
+                          CONTROL CRITICAL USER <br /> DATA INCLUDING <br />{" "}
+                          FINANCIAL INFORMATION <br /> AND ITS DONE WITHOUT{" "}
+                          <br /> CONSENT OF USERS.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1057,47 +1127,96 @@ class Home extends Component {
           <div className="section section6-item3 section6-items">
             <p className="heading1">SOLUTIONS</p>
             <div className="section6-items-content">
-              <div className="section6-one-third">
-                <img src="src/assets/images/tles.png" id="small-logo"></img>
-                <div>
-                  <p className="mediumletter">TRUST-LESS ECO-SYSTEM</p>
-                  <p className="smallletters8">
-                    WORK QUEST UTILIZES BLOCKCHAIN TECHNOLOGY WHICH CREATES AN
-                    ECO-SYSTEM WHERE ALL TRANSACTIONS ARE IMPLEMENTED BY AN
-                    INDEPENDENT NETWORK AND SMART CONTRACT EXECUTION. THE
-                    PLATFORM OFFERS OPEN INDIVIDUAL USER REVIEW AND VERIFICATION
-                    TO ELIMINATE THE PROBLEM OF DATA LOSS OR FRAUD IN THE JOB
-                    MARKET.
-                  </p>
-                </div>
-              </div>
-              <div className="section6-one-third sectin6-middle2">
-                <img src="src/assets/images/sec.png" id="small-logo"></img>
-                <div>
-                  <p className="mediumletter">SECURITY</p>
-                  <p className="smallletters8">
-                    USERS ON THE PLATFORM POSSESS CONTROL OF THEIR DATA AND
-                    EITHER PARTY TO A CONTRACT WILL HAVE TO SEEK PERMISSION FROM
-                    INDIVIDUAL PLATFORM PARTICIPANT IN ORDER TO USE, ACCESS OR
-                    AMEND ANY INFORMATION ALTOUGH THIS WORKS IN REAL TIME TO
-                    MAKE THE PROCESS FAST AND RELIABLE.{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="section6-one-third last">
-                <img
-                  src="src/assets/images/decentral.png"
-                  id="small-logo"
-                ></img>
-                <div>
-                  <p className="mediumletter">
-                    DECENTRALIZED PROFESSIONAL NETWORK
-                  </p>
-                  <p className="smallletters8">
-                    WORK QUEST PROVIDES A SINGLE INTERFACE PLATFORM YET
-                    DECENTRALIZED WITH BOTH PARTIES ACCESSING TRANSACTIONS ON
-                    THE JOBS BOARD IN REAL TIME.
-                  </p>
+              <div>
+                <div
+                  style={{ alignItems: "flex-start", marginTop: "-10px" }}
+                  className="feature_item"
+                >
+                  <div id="1">
+                    <div className="mission_item">
+                      <img
+                        src="src/assets/images/tles.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          TRUST-LESS <br /> ECO-SYSTEM
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          WORK QUEST UTILIZES <br /> BLOCKCHAIN <br />{" "}
+                          TECHNOLOGY WHICH <br />
+                          CREATES AN ECO-SYSTEM <br /> WHERE ALL <br />{" "}
+                          TRANSACTIONS ARE <br />
+                          IMPLEMENTED BY AN <br /> INDEPENDENT NETWORK <br />{" "}
+                          AND SMART CONTRACT <br /> EXECUTION. THE <br />{" "}
+                          PLATFORM OFFERS OPEN <br />
+                          INDIVIDUAL USER REVIEW <br /> AND VERIFICATION TO{" "}
+                          <br /> ELIMINATE THE PROBLEM <br /> OF DATA LOSS OR
+                          FRAUD <br /> IN THE JOB MARKET.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="2">
+                    <div className="mission_item">
+                      <img
+                        src="src/assets/images/sec.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          SECURITY
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          USERS ON THE PLATFORM <br /> POSSESS CONTROL OF THEIR{" "}
+                          <br /> DATA AND EITHER PARTY TO <br /> A CONTRACT WILL
+                          HAVE TO <br /> SEEK PERMISSION FROM <br /> INDIVIDUAL
+                          PLATFORM <br /> PARTICIPANT IN ORDER TO <br /> USE,
+                          ACCESS OR AMEND ANY <br /> INFORMATION ALTOUGH THIS{" "}
+                          <br /> WORKS IN REAL TIME TO <br /> MAKE THE PROCESS
+                          FAST <br /> AND RELIABLE.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="3">
+                    <div className="mission_item">
+                      <img
+                        src="src/assets/images/decentral.png"
+                        id="small-logo"
+                      ></img>
+                      <div className="mission_content">
+                        <p
+                          style={{ marginBottom: "30px", textAlign: "center" }}
+                          className="mediumletter"
+                        >
+                          DECENTRALIZED <br /> PROFESSIONAL <br /> NETWORK
+                        </p>
+                        <p
+                          style={{ textAlign: "center" }}
+                          className="smallletters8"
+                        >
+                          WORK QUEST PROVIDES A <br /> SINGLE INTERFACE <br />{" "}
+                          PLATFORM YET <br />
+                          DECENTRALIZED WITH <br /> BOTH PARTIES ACCESSING{" "}
+                          <br /> TRANSACTIONS ON THE <br /> JOBS BOARD IN REAL
+                          TIME.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
