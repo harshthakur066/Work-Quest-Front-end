@@ -589,7 +589,9 @@ class Home extends Component {
         <Fade bottom>
           <div>
             <div className="section section2" id="about" ref={this.about}>
-              <p className="heading1">ABOUT PROJECT</p>
+              <p className="heading1">
+                ABOUT <br /> PROJECT
+              </p>
               <div className="about_section">
                 <div className="about_section_items about_text_container">
                   <p className="heading2">
@@ -598,25 +600,29 @@ class Home extends Component {
                     <span className="hpart2">WHY DO WE USE IT?</span>
                   </p>
                   <p className="smallletters7">
-                    WORK COIN IS A CRYPTOCURRENCY USED ON THE WORK QUEST
+                    WORK COIN IS A CRYPTOCURRENCY USED <br /> ON THE WORK QUEST
                     ECO-SYSTEM
                   </p>
                   <p className="smallletters7">
-                    WORK COIN, IS A CRYPTOCURRENCY USED TO CALCULATE
-                    REMUNERATION BETWEEN AN EMPLOYEE AND EMPLOYER IN THE WORK
-                    QUEST NETWORK. THE COIN IS ALSO USED TO FACI.LLITATE PAYMENT
-                    TRANSACTION OF ANY TYPE WITHIN OUR WORK QUEST ECO-SYSTEM.{" "}
+                    WORK COIN, IS A CRYPTOCURRENCY USED <br /> TO CALCULATE
+                    REMUNERATION BETWEEN <br /> AN EMPLOYEE AND EMPLOYER IN THE{" "}
+                    <br /> WORK QUEST NETWORK. THE COIN IS ALSO <br /> USED TO
+                    FACI.LLITATE PAYMENT <br />
+                    TRANSACTION OF ANY TYPE WITHIN OUR <br /> WORK QUEST
+                    ECO-SYSTEM.
                   </p>
                   <p className="smallletters7">
-                    WORK QUEST AS A GLOBAL PROJECT THAT WOULD WORK AS A TOOL
-                    SEARCH AND COMMUNICATION OF WORKERS AND EMPLOYEES. IT IS AN
-                    ONLINE WORK MARKETPLACE CONNECTING ALL TYPES OF EMPLOYEES
-                    WITH WORKERS AROUND EVERY CORNER OF THE WORLD THROUGH A
-                    BLOCKCHAIN POWERED SMART CONTRACT.
+                    WORK QUEST AS A GLOBAL PROJECT THAT <br /> WOULD WORK AS A
+                    TOOL SEARCH AND <br /> COMMUNICATION OF WORKERS AND <br />
+                    EMPLOYEES. IT IS AN ONLINE WORK <br /> MARKETPLACE
+                    CONNECTING ALL TYPES OF <br /> EMPLOYEES WITH WORKERS AROUND{" "}
+                    <br /> EVERY CORNER OF THE WORLD <br /> THROUGH A BLOCKCHAIN
+                    POWERED SMART <br /> CONTRACT.
                   </p>
                 </div>
                 <div className="about_section_items about_image_container">
                   <a
+                    className=""
                     href="https://www.youtube.com/watch?v=SSo_EIwHSd4"
                     id="youtube"
                   >
@@ -625,7 +631,11 @@ class Home extends Component {
                       className="play-btn"
                     ></img>
                   </a>
-                  <img src="src/assets/images/output-onlinepngtools.png"></img>
+                  <img
+                    width="100%"
+                    height="auto"
+                    src="src/assets/images/output-onlinepngtools.png"
+                  ></img>
                 </div>
               </div>
             </div>
@@ -642,7 +652,7 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/bi.png"></img>
               <div className="mission_content">
-                <p className="mediumletter">
+                <p style={{ marginBottom: "30px" }} className="mediumletter">
                   BLOCKCHAIN <br></br>INFRASTRUCTURE
                 </p>
                 <p className="smallletters8">
@@ -655,7 +665,7 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/eti.png"></img>
               <div className="mission_content">
-                <p className="mediumletter">
+                <p style={{ marginBottom: "30px" }} className="mediumletter">
                   EASY TOKEN <br></br>INTEGRATION
                 </p>
                 <p className="smallletters8">
@@ -668,7 +678,7 @@ class Home extends Component {
             <div className="mission_item">
               <img src="src/assets/images/global.png"></img>
               <div className="mission_content">
-                <p className="mediumletter">
+                <p style={{ marginBottom: "30px" }} className="mediumletter">
                   GLOBAL SYSTEM<br></br> AND SECURE
                 </p>
                 <p className="smallletters8">
