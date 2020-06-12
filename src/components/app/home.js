@@ -1355,45 +1355,67 @@ class Home extends Component {
           </div>
         </div>
         <div className="section section8" id="contact" ref={this.contact}>
-          <p className="heading1 section-heading">GET IN TOUCH</p>
+          <p
+            style={{ textAlign: "center" }}
+            className="heading1 section-heading"
+          >
+            GET IN TOUCH
+          </p>
           <p className="smallletters9 section8-context">
             ANY QUESTION? REACH OUT TO US AND WE’LL GET BACK TO YOU SHORTLY.
           </p>
-          <form className="contact_form">
-            <p className="contact_input">
-              <label className="smallletters9" htmlFor="contact_form_name">
-                YOUR NAME
-              </label>
-              <input type="text" name="contact_form_name" />
-            </p>
-            <p className="contact_input">
-              <label className="smallletters9" htmlFor="contact_form_email">
-                YOUR EMAIL
-              </label>
-              <input type="text" name="contact_form_email" />
-            </p>
-            <p className="contact_input">
-              <label className="smallletters9" htmlFor="contact_form_msg">
-                YOUR MESSAGE
-              </label>
-              <input type="text" name="contact_form_msg" id="xdx" />
-            </p>
+          <div className="section8_display">
+            <form className="contact_form">
+              <p className="contact_input">
+                <label className="smallletters9" htmlFor="contact_form_name">
+                  YOUR NAME
+                </label>
+                <input
+                  style={{ color: "white" }}
+                  type="text"
+                  name="contact_form_name"
+                />
+              </p>
+              <p className="contact_input">
+                <label className="smallletters9" htmlFor="contact_form_email">
+                  YOUR EMAIL
+                </label>
+                <input
+                  style={{ color: "white" }}
+                  type="text"
+                  name="contact_form_email"
+                />
+              </p>
+              <p className="contact_input">
+                <label className="smallletters9" htmlFor="contact_form_msg">
+                  YOUR MESSAGE
+                </label>
+                <input
+                  style={{ color: "white" }}
+                  type="text"
+                  name="contact_form_msg"
+                  id="xdx"
+                />
+              </p>
 
-            <input
-              type="submit"
-              className="join_btn contact_submit"
-              value="SEND"
-            />
-          </form>
-          <div className="contact_details">
-            <p className="smallletters2">
-              <br /> +044 0123 4567
-            </p>
-            <p className="smallletters2">
-              feedback@workquest.co
-              <br />
-              join us on telegram
-            </p>
+              <input
+                type="submit"
+                className="join_btn contact_submit"
+                value="SEND"
+              />
+            </form>
+            <div style={{ marginRight: "2rem" }} className="contact_details">
+              <p className="smallletters2">
+                <div style={{ margin: "1px" }} className="telegram">
+                  contact@workquest.co
+                </div>
+                <br />
+                <a className="telegram" href="https://t.me/WorkQuest">
+                  {" "}
+                  join us on telegram{" "}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         <div className="section section9" id="faq" ref={this.faq}>
