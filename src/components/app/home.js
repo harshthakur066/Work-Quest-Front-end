@@ -175,6 +175,12 @@ class Home extends Component {
                     <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
                   </li>
                 </ul>
+                <a
+                  onClick={this.handleForm.bind(this, "login")}
+                  className=" hov nav_login"
+                >
+                  <div className="faq-btn faq-disable">LOGIN</div>
+                </a>
               </div>
               <div
                 className={`collapse_btn ${isActive ? "nav_close_btn" : ""}`}
@@ -1440,13 +1446,10 @@ class Home extends Component {
             </form>
             <div style={{ marginRight: "2rem" }} className="contact_details">
               <p className="smallletters2">
-                <div style={{ margin: "1px" }} className="telegram">
-                  contact@workquest.co
-                </div>
+                <div className="hov">contact@workquest.co</div>
                 <br />
-                <a className="telegram" href="https://t.me/WorkQuest">
-                  {" "}
-                  join us on telegram{" "}
+                <a className="hov" href="https://t.me/WorkQuest">
+                  join us on telegram
                 </a>
               </p>
             </div>
@@ -1456,6 +1459,7 @@ class Home extends Component {
           <p className="heading1 section9-heading">
             FREQUENTLY ASKED <br /> QUESTIONS
           </p>
+          <li className="">join us on telegram</li>
           <p className="smallletters9 section9-context">
             BELOW WE’VE PROVIDED INFORMATION ABOUT WORKQUEST AND WORK <br />{" "}
             COIN(WRC), AND FEW OTHERS, IF YOU HAVE ANY QUESTIONS, PLEASE GET IN{" "}

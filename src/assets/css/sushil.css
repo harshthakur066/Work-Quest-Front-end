@@ -897,12 +897,6 @@ body {
   padding: 0 4rem;
   text-align: center;
 }
-.telegram {
-  cursor: pointer;
-}
-.telegram :hover {
-  color: #0083c7;
-}
 .section8_display {
   display: flex;
   flex-direction: row-reverse;
@@ -1020,7 +1014,7 @@ body {
 .faq-disable {
   border: 2px solid #3eb5f1;
   border-radius: 17px;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1.8rem;
 }
 
 .faq-heading-item {
@@ -1045,6 +1039,10 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+}
+.nav_login {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .display_none_class {
   display: none;
