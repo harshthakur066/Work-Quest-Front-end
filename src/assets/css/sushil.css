@@ -613,15 +613,15 @@ body {
   max-width: 22rem;
 }
 .slider {
-  width: 51%;
+  width: 60%;
   margin: 2rem auto 2rem auto;
   text-align: center;
 }
 .slider1-images {
-  width: 11.6rem;
+  width: 100%;
 }
 .chevron {
-  width: 3rem;
+  width: 60%;
 }
 .section.section6-item1 {
   margin-top: 2rem;

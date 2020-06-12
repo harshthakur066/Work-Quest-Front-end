@@ -970,14 +970,19 @@ class Home extends Component {
           <div className="slider">
             <ItemsCarousel
               placeholderItem={
-                <div style={{ height: 150, background: "#EEE" }} />
+                <div
+                  style={{
+                    height: 150,
+                    background: "#EEE",
+                  }}
+                />
               }
               enablePlaceholder={true}
               numberOfPlaceholderItems={0}
               numberOfCards={3}
               gutter={12}
               slidesToScroll={3}
-              chevronWidth={73}
+              chevronWidth={60}
               outsideChevron={true}
               showSlither={false}
               firstAndLastGutter={false}
