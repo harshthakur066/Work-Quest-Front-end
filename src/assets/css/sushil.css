@@ -954,6 +954,10 @@ body {
 .contact_details p {
   text-align: center;
 }
+.telegram {
+  cursor: pointer;
+  color: #0ba3f5;
+}
 .section9 {
   margin: 1rem;
   display: flex;

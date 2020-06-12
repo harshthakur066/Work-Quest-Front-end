@@ -1453,7 +1453,7 @@ class Home extends Component {
               <p className="smallletters2">
                 <div className="hov">contact@workquest.co</div>
                 <br />
-                <a className="hov" href="https://t.me/WorkQuest">
+                <a className="telegram" href="https://t.me/WorkQuest">
                   join us on telegram
                 </a>
               </p>
@@ -1464,7 +1464,6 @@ class Home extends Component {
           <p className="heading1 section9-heading">
             FREQUENTLY ASKED <br /> QUESTIONS
           </p>
-          <li className="">join us on telegram</li>
           <p className="smallletters9 section9-context">
             BELOW WE’VE PROVIDED INFORMATION ABOUT WORKQUEST AND WORK <br />{" "}
             COIN(WRC), AND FEW OTHERS, IF YOU HAVE ANY QUESTIONS, PLEASE GET IN{" "}
