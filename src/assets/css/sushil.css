@@ -810,28 +810,29 @@ body {
 .mac_container {
   width: 1%;
   position: absolute;
-  top: -27%;
-  left: -20%;
+  /* top: -27%;
+  left: -20%; */
 }
 .macbook {
   width: 45rem;
 }
 .macbook-wallpaper {
-  width: 22.3rem;
-  z-index: 2;
+  width: 27rem;
+  /* z-index: 2; */
   position: absolute;
-  top: 37.2%;
-  margin-left: 5.2rem;
+  top: 29.9%;
+  margin-left: 8.8rem;
 }
 .blue-wallpaper {
   height: 49rem;
-  width: 110%;
+  width: 75%;
+  padding-left: 18rem;
 }
 .section6-item4-content {
   position: absolute;
-  top: 50%;
-  width: 80%;
-  left: 10%;
+  top: 33%;
+  width: 30%;
+  left: 50%;
 }
 .section6-item4-content div {
   margin-top: 0.7rem;
@@ -1520,10 +1521,24 @@ input[type="text"]::placeholder {
     margin-right: 2rem;
     margin-left: 40%;
   }
+  .section6-item4-content {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
+  }
 }
 @media screen and (min-width: 379px) and (max-width: 599px) {
   .firstBox {
     margin-bottom: 50px;
+  }
+  .section6-item4-content {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
   }
 }
 /*---- extra small devices  ---------------------*/
@@ -1669,5 +1684,12 @@ input[type="text"]::placeholder {
   .sale_piechart > img {
     max-width: 15rem;
     margin-top: 1.5rem;
+  }
+  .section6-item4-content {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
   }
 }

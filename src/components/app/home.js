@@ -1245,8 +1245,13 @@ class Home extends Component {
             </div>
             <div className="section6-item4-content">
               <div>
-                <p className="bigletters">WORK COIN PROJECT</p>
-                <p className="smallletters8">
+                <p className="bigletters">
+                  WORK COIN <br /> PROJECT
+                </p>
+                <p
+                  style={{ margin: "10px 0", padding: "10px 0" }}
+                  className="smallletters8"
+                >
                   WORK QUEST IS BASED ON OWN BLOCKCHAIN COUPLED WITH ITS OWN
                   SMART CONTRACT SYSTEM. USERS BOTH EMPLOYERS AND EMPLOYEES WILL
                   BE ABLE TO CREATE PROFILES ON THE PLATFORM AND THEIR DATA IS
