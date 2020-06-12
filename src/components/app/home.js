@@ -1420,15 +1420,111 @@ class Home extends Component {
         </div>
         <div className="section section9" id="faq" ref={this.faq}>
           <p className="heading1 section9-heading">
-            FREQUENTLY ASKED QUESTIONS
+            FREQUENTLY ASKED <br /> QUESTIONS
           </p>
           <p className="smallletters9 section9-context">
-            BELOW WE’VE PROVIDED INFORMATION ABOUT WORKQUEST AND WORK COIN(WRC),
-            AND FEW OTHERS, IF YOU HAVE ANY QUESTIONS, PLEASE GET IN TOUCH USING
-            THE CONTACT FORM BELOW
+            BELOW WE’VE PROVIDED INFORMATION ABOUT WORKQUEST AND WORK <br />{" "}
+            COIN(WRC), AND FEW OTHERS, IF YOU HAVE ANY QUESTIONS, PLEASE GET IN{" "}
+            <br /> TOUCH USING THE CONTACT FORM BELOW
           </p>
+          <div className="faq_items_view">
+            <div className="faq_items">
+              General
+              <div className="faq-item">
+                <p className="blueletters2">
+                  WHAT IS THE DIFFERENCE BETWEEN A WORK QUEST AND A WORK COIN
+                </p>
+                <p className="smallletters9">
+                  WORK QUEST IS A PLATFORM CONNECTING <br /> EMPLOYERS AND
+                  EMPLOYEES USING BLOCKCHAIN <br /> TECHNOLOGY. WORK COIN(WRC)
+                  IS THE TOKEN <br /> USED IN THE ECO-SYSTEM TO FACILITATE{" "}
+                  <br /> PAYMENTS AND OTHER TRANSACTIONS
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">
+                  WHAT CRYPTOCURRENCIES CAN I USE TO <br /> PURCHASE WRC?
+                </p>
+                <p className="smallletters9">
+                  ONE CAN USE ETH, BTC, LTC OR EVEN FIAT MONEY
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">
+                  HOW CAN I PARTICIPATE IN THE ICO TOKEN SALE?
+                </p>
+                <p className="smallletters9">
+                  IT IS EASY, REGISTER ON OUR WEBSITE, THE <br /> ACQUIRE THE
+                  ACCEPTED CRYPTOCURRENCIES <br /> NAMELY, BTC ETH AND LTH, SEND
+                  THE RESPECTIVE <br />
+                  CRYPTOCURRENCY YOU PURCHASED AND HAVE IN <br /> YOUR WALLET
+                  OUR CAMPAIGN ADDRESS AND IN <br /> RETURN YOU RECEIVE THE WRC
+                  TOKENS AND <br />
+                  THEN STORE THEM IN YOUR PREFERRED WALLET
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">WHO IS WORK QUEST TARGETED AT?</p>
+                <p className="smallletters9">
+                  WORK QUEST TARGETS JOB SEEKERS AND <br /> EMPLOYERS WHO ARE
+                  WORLDS APART AND CAN <br /> PROVIDE THEIR SERVICES VIA AN
+                  ONLINE <br /> PLATORM WHILE GETTING THE BEST AWARD
+                </p>
+              </div>
+            </div>
+            <div className="faq_items">
+              ICO
+              <div className="faq-item">
+                <p className="blueletters2">WHY DO YOU NEED AN ICO?</p>
+                <p className="smallletters9">
+                  SUCCESFUL ICO WILL ENABE US DEVELOP AND <br /> ACQUIRE MORE
+                  BLOCKCHAIN AND <br /> CRYPTOCURRENCY TALENT TO CREATE A HIGHLY{" "}
+                  <br /> UNIQUE AND BENEFICIAL PLATFORM TO HELP OUR <br />{" "}
+                  STAKEHOLDERS. ALL OUR PROCEEDS GO TO <br /> PRODUCT
+                  DEVELOPMENT RELATED ACTIVITIES <br /> AND LAUNCH AS WELL AS
+                  USER ACQUISATION
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">
+                  WHY SHOULD YOU INVEST IN OUR ICO?
+                </p>
+                <p className="smallletters9">
+                  WE ARE COMMMITED TO CREATE THE MOST <br /> ADVANCED AND
+                  TRUSTWORTHY PLATFORM THAT <br /> TRANSFORMS RELATIONS BETWEEN
+                  EMPLOTYERS <br /> AND EMPLOYEES IN THE INDUSTRY AND AT A{" "}
+                  <br /> GLOBAL SCALE. WE TARGET 3.5 MILLION USERS <br /> AND
+                  10,000 CORPORATE USERS BY 2023
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">
+                  WHAT IS THE GOAL OF THE ICO CAMPAIGN?
+                </p>
+                <p className="smallletters9">
+                  THE MAXIMUM TARGET FOR THE CAMPAIGN IS $1O <br /> MILLION
+                </p>
+              </div>
+              <div className="faq-item">
+                <p className="blueletters2">
+                  HOW CAN YOU BE SURE WORK WILL COMMENCE AFTER TOKEN SALE?
+                </p>
+                <p className="smallletters9">
+                  WE ARE A TEAM OF PEOPLE DRIVEN BY RESULTS <br /> AND THIS IS
+                  EVIDENT FROM OUR PAST PROJECTS <br /> WIHTING THE ICO AND
+                  OUTSIDE THE ICO SPACE. <br /> THE TEAM EITHE RCOLLABORATIVELY
+                  OR <br /> INDIVIDUALLY HAVE BEEN INVOLVED IN <br />{" "}
+                  INTERNATIONAL PROJECTS WHICH HAVE BEEN <br />
+                  CONCLUDED <br /> TO FRUITION. WE ARE USING ICO <br />{" "}
+                  FINACNING METHOD BECAUSE OF ITS <br /> AFFORDABILITY AND
+                  ABILITY TO INVOLVE OTHER <br />
+                  PEOPLE WORLDWIDE IN OUR PROJECT
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="faq-wrapper">
-            <div className="pair-btn-container">
+            {/* <div className="pair-btn-container">
               <button
                 className={
                   this.state.faq_active == "ico"
@@ -1449,7 +1545,7 @@ class Home extends Component {
               >
                 GENERAL
               </button>
-            </div>
+            </div> */}
             <div className="faq-content">
               <div
                 className={
@@ -1459,52 +1555,6 @@ class Home extends Component {
                 }
               >
                 <p className="mediumletter2 faq-heading-item">GENERAL</p>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    WHAT IS THE DIFFERENCE BETWEEN A WORK QUEST AND A WORK COIN
-                  </p>
-                  <p className="smallletters9">
-                    WORK QUEST IS A PLATFORM CONNECTING EMPLOYERS AND EMPLOYEES
-                    USING BLOCKCHAIN TECHNOLOGY. WORK COIN(WRC) IS THE TOKEN
-                    USED IN THE ECO-SYSTEM TO FACILITATE PAYMENTS AND OTHER
-                    TRANSACTIONS
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    WHAT CRYPTOCURRENCIES CAN I USE TO PURCHASE WRC?
-                  </p>
-                  <p className="smallletters9">
-                    ONE CAN USE ETH, BTC, LTC OR EVEN FIAT MONEY
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    HOW CAN I PARTICIPATE IN THE ICO TOKEN SALE?
-                  </p>
-                  <p className="smallletters9">
-                    IT IS EASY, REGISTER ON OUR WEBSITE, THE ACQUIRE THE
-                    ACCEPTED CRYPTOCURRENCIES NAMELY, BTC ETH AND LTH, SEND THE
-                    RESPECTIVE CRYPTOCURRENCY YOU PURCHASED AND HAVE IN YOUR
-                    WALLET OUR CAMPAIGN ADDRESS AND IN RETURN YOU RECEIVE THE
-                    WRC TOKENS AND THEN STORE THEM IN YOUR PREFERRED WALLET
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">WHO IS WORK QUEST TARGETED AT?</p>
-                  <p className="smallletters9">
-                    WORK QUEST TARGETS JOB SEEKERS AND EMPLOYERS WHO ARE WORLDS
-                    APART AND CAN PROVIDE THEIR SERVICES VIA AN ONLINE PLATORM
-                    WHILE GETTING THE BEST AWARD
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                  </p>
-                </div>
               </div>
               <div
                 className={
@@ -1514,49 +1564,6 @@ class Home extends Component {
                 }
               >
                 <p className="mediumletter2 faq-heading-item">ICO</p>
-                <div className="faq-item">
-                  <p className="blueletters2">WHY DO YOU NEED AN ICO?</p>
-                  <p className="smallletters9">
-                    SUCCESFUL ICO WILL ENABE US DEVELOP AND ACQUIRE MORE
-                    BLOCKCHAIN AND CRYPTOCURRENCY TALENT TO CREATE A HIGHLY
-                    UNIQUE AND BENEFICIAL PLATFORM TO HELP OUR STAKEHOLDERS. ALL
-                    OUR PROCEEDS GO TO PRODUCT DEVELOPMENT RELATED ACTIVITIES
-                    AND LAUNCH AS WELL AS USER ACQUISATION
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    WHY SHOULD YOU INVEST IN OUR ICO?
-                  </p>
-                  <p className="smallletters9">
-                    WE ARE COMMMITED TO CREATE THE MOST ADVANCED AND TRUSTWORTHY
-                    PLATFORM THAT TRANSFORMS RELATIONS BETWEEN EMPLOTYERS AND
-                    EMPLOYEES IN THE INDUSTRY AND AT A GLOBAL SCALE. WE TARGET
-                    3.5 MILLION USERS AND 10,000 CORPORATE USERS BY 2023
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    WHAT IS THE GOAL OF THE ICO CAMPAIGN?
-                  </p>
-                  <p className="smallletters9">
-                    THE MAXIMUM TARGET FOR THE CAMPAIGN IS $1O MILLION
-                  </p>
-                </div>
-                <div className="faq-item">
-                  <p className="blueletters2">
-                    HOW CAN YOU BE SURE WORK WILL COMMENCE AFTER TOKEN SALE?
-                  </p>
-                  <p className="smallletters9">
-                    WE ARE A TEAM OF PEOPLE DRIVEN BY RESULTS AND THIS IS
-                    EVIDENT FROM OUR PAST PROJECTS WIHTING THE ICO AND OUTSIDE
-                    THE ICO SPACE. THE TEAM EITHE RCOLLABORATIVELY OR
-                    INDIVIDUALLY HAVE BEEN INVOLVED IN INTERNATIONAL PROJECTS
-                    WHICH HAVE BEEN CONCLUDED TO FRUITION. WE ARE USING ICO
-                    FINACNING METHOD BECAUSE OF ITS AFFORDABILITY AND ABILITY TO
-                    INVOLVE OTHER PEOPLE WORLDWIDE IN OUR PROJECT
-                  </p>
-                </div>
               </div>
             </div>
           </div>
