@@ -132,10 +132,8 @@ class Home extends Component {
             canvasclassName="example"
           />
         </div>
-        <a href="#">
-          <img src="src/assets/images/logo.png" className="brand"></img>
-        </a>
-        {/* <div className="navbar">
+
+        <div className="navbar">
           <nav>
             <div className="nav_items">
               <div>
@@ -145,6 +143,39 @@ class Home extends Component {
               </div>
             </div>
             <div className="nav_items">
+              <div className="display_nav">
+                <ul className="footer_links">
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "about")}>
+                      WHAT IS WORK COIN?
+                    </a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "sale")}>
+                      TOKEN SALE
+                    </a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "road")}>
+                      ROAD MAP
+                    </a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "mvp")}>MVP</a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "team")}>TEAM</a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "contact")}>
+                      CONTACT
+                    </a>
+                  </li>
+                  <li className="hov">
+                    <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
+                  </li>
+                </ul>
+              </div>
               <div
                 className={`collapse_btn ${isActive ? "nav_close_btn" : ""}`}
                 onClick={this.openNav}
@@ -158,7 +189,7 @@ class Home extends Component {
               <div className="wqNav nav_items">
                 <div className="nav_link_container">
                   <div className="">
-                    <img src="src/assets/images/wqname.png"></img>
+                    <img width="100%" src="src/assets/images/wqname.png"></img>
                   </div>
                   <ul className="nav_link_items">
                     <li>
@@ -234,7 +265,7 @@ class Home extends Component {
               </div>
             </div>
           </nav>
-        </div>*/}
+        </div>
         <div
           id="login-form"
           style={{ display: this.state.login ? "block" : "none" }}
@@ -888,23 +919,23 @@ class Home extends Component {
             <div>
               <div className="sale_info_item">
                 <p className="mediumletter2">OUR START</p>
-                <p className="blueletters">Jun 1, 2019 (12:00AM GMT)</p>
+                <p className="blueletters">Jun 21, 2020 (12:00AM GMT)</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">END</p>
-                <p className="blueletters">Aug 1, 2019 (12:00AM GMT)</p>
+                <p className="blueletters">Aug 21, 2020 (12:00AM GMT)</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">ACCEPTABLE CURRENCIES</p>
-                <p className="blueletters">ETH, BTC, LTC & FIAT</p>
+                <p className="blueletters">ETH, EURO (manual mode) </p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">NUMBER OF TOKENS FOR SALE</p>
-                <p className="blueletters">600,000,000 WRC</p>
+                <p className="blueletters">50,000,000 WRC</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">TOKENS EXCHANGE RATE</p>
-                <p className="blueletters">1 ETH = 140 WRC</p>
+                <p className="blueletters">1 ETH = 1000 WRC</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">MINIMUM TRANSCATION AMOUNT</p>
@@ -1281,22 +1312,25 @@ class Home extends Component {
         <div className="section section7" id="team" ref={this.team}>
           <p className="heading1 section-heading">OUR TEAM</p>
           <p className="smallletters9 section-description">
-            OUR TEAM IS PASSIONATE AND COMMITED TO DELIVER RESULTS. DIVERSITY IS
-            KEY TO US AND DRIVING INNOVATION DESIRED ON WORK QUEST
+            OUR TEAM IS PASSIONATE AND COMMITED TO DELIVER RESULTS. DIVERSITY{" "}
+            <br /> IS KEY TO US AND DRIVING INNOVATION DESIRED ON WORK QUEST
           </p>
-          <div className="carousel2">
+          <div>
+            <img width="100%" src="../src/assets/images/team.png" />
+          </div>
+          {/* <div className="carousel2">
             <ItemsCarousel
               placeholderItem={
                 <div style={{ height: 150, background: "#EEE" }} />
               }
               enablePlaceholder={true}
               numberOfPlaceholderItems={6}
-              numberOfCards={1}
+              numberOfCards={3}
               gutter={12}
               slidesToScroll={1}
               chevronWidth={10}
               outsideChevron={true}
-              showSlither={false}
+              showSlither={true}
               firstAndLastGutter={false}
               activeItemIndex={this.state.activeItemIndex1}
               requestToChangeActive={(value) =>
@@ -1352,7 +1386,7 @@ class Home extends Component {
                 </p>
               </div>
             </ItemsCarousel>
-          </div>
+          </div> */}
         </div>
         <div className="section section8" id="contact" ref={this.contact}>
           <p
@@ -1568,93 +1602,114 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <img
-          src="src/assets/images/footer background.png"
-          id="small-logo7"
-        ></img>
+        {/* <div>
+          <img
+            src="src/assets/images/footer background.png"
+            id="small-logo7"
+          ></img>
+          <div style={{ position: "absolute" }}>
+            <img src="src/assets/images/Logotype.png" />
+          </div>
+        </div> */}
         <div id="footer">
           <div className="footer_wrapper">
             <div className="footer_first_section">
               <div className="footer_section_image">
                 <img src="src/assets/images/Logotype.png" />
               </div>
-              <ul className="footer_links">
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "about")}>
-                    WHAT IS WORK COIN?
-                  </a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "sale")}>
-                    TOKEN SALE
-                  </a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "road")}>ROAD MAP</a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "mvp")}>MVP</a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "team")}>TEAM</a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "contact")}>
-                    CONTACT
-                  </a>
-                </li>
-                <li>
-                  <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
-                </li>
-              </ul>
+              <div>
+                <ul className="footer_links">
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "about")}>
+                      WHAT IS WORK COIN?
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "sale")}>
+                      TOKEN SALE
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "road")}>
+                      ROAD MAP
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "mvp")}>MVP</a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "team")}>TEAM</a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "contact")}>
+                      CONTACT
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
+                  </li>
+                </ul>
+                <div className="workquest">
+                  WORKQUEST OÜ operates with licenses: Providing services of
+                  exchanging a virtual currency against <br /> a fiat currency -
+                  FVR001144 Providing a virtual currency wallet service -
+                  FRK001031
+                </div>
+                <ul className="footer_social_links">
+                  <li>
+                    <a href="https://www.facebook.com/Work-Quest-812723252395163/">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/quest_work">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCpQTdOMynXejrRTVf4ksKPA">
+                      <FontAwesomeIcon icon={faYoutube} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/work_coin/">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/WorkQuest">
+                      <FontAwesomeIcon icon={faTelegram} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/workquestofficial">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                  </li>
+                </ul>
+                <div>
+                  <p
+                    style={{
+                      textAlign: "right",
+                      marginBottom: "3rem",
+                      marginRight: "6rem",
+                    }}
+                  >
+                    WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION
+                    BETWEEN AN EMPLOYER AND <br /> AN EMPLOYEE IN THE WORKQUEST
+                    NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT <br />
+                    TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.
+                  </p>
+                  <p className="copyright">
+                    COPYRIGHT © 2020, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO
+                    THEIR RESPECTIVE OWNERS
+                  </p>
+                </div>
+              </div>
             </div>
-            <ul className="footer_social_links">
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faTelegram} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-            </ul>
           </div>
           <div className="footer_foot">
             <img src="src/assets/images/croped_logo.png" />
-            <div>
-              <p>
-                WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION
-                BETWEEN AN EMPLOYER AND AN EMPLOYEE IN THE WORKQUEST NETWORK.
-                THE COIN IS ALSO USED TO FACILITATE PAYMENT TRANSACTION OF ANY
-                TYPE WITHIN OUR WORKQUEST ECOSYSTEM.
-              </p>
-              <p>
-                COPYRIGHT © 2020, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO THEIR
-                RESPECTIVE OWNERS
-              </p>
-            </div>
           </div>
         </div>
       </div>
