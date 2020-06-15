@@ -349,7 +349,7 @@ body {
   justify-content: center;
 }
 .about_image_container > img {
-  width: 60%;
+  width: 69%;
 }
 .about_image_container > a {
   display: flex;
@@ -365,13 +365,13 @@ body {
   width: 10rem;
   transition: transform 0.2s;
   animation-name: example;
-  animation-duration: 0.6s;
+  animation-duration: 0.4s;
   animation-iteration-count: infinite;
   /* transform: translate(0, 0);
   transition: all 0.4s; */
 }
 .play-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   animation: none;
   width: 35%;
 }
@@ -380,7 +380,7 @@ body {
     width: 35%;
   }
   to {
-    width: 38%;
+    width: 40%;
   }
 }
 .about_text_container > p:not(:first-child) {
@@ -431,7 +431,7 @@ body {
   margin-top: 1.5rem;
 }
 .mission_item > img {
-  width: 10rem;
+  width: 12rem;
 }
 .mission_content > p {
   text-align: left;
@@ -824,16 +824,22 @@ body {
   width: 45rem;
 }
 .macbook-wallpaper {
-  width: 27rem;
+  width: 27.1rem;
+  height: 39%;
   /* z-index: 2; */
   position: absolute;
-  top: 29.9%;
-  margin-left: 8.8rem;
+  top: 29.8%;
+  margin-left: 8.7rem;
 }
 .blue-wallpaper {
   height: 49rem;
-  width: 75%;
   padding-left: 18rem;
+  width: 90%;
+}
+.white_img {
+  height: 52.2rem;
+  padding-top: 4rem;
+  margin-left: -6rem;
 }
 .section6-item4-content {
   position: absolute;
@@ -1810,5 +1816,8 @@ input[type="text"]::placeholder {
   }
   .footer_social_links > li {
     margin-right: 1rem;
+  }
+  .blue-wallpaper {
+    width: unset;
   }
 }

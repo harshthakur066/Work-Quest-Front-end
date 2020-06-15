@@ -644,7 +644,7 @@ class Home extends Component {
                     WORK COIN, IS A CRYPTOCURRENCY USED <br /> TO CALCULATE
                     REMUNERATION BETWEEN <br /> AN EMPLOYEE AND EMPLOYER IN THE{" "}
                     <br /> WORK QUEST NETWORK. THE COIN IS ALSO <br /> USED TO
-                    FACI.LLITATE PAYMENT <br />
+                    FACILLITATE PAYMENT <br />
                     TRANSACTION OF ANY TYPE WITHIN OUR <br /> WORK QUEST
                     ECO-SYSTEM.
                   </p>
@@ -660,6 +660,7 @@ class Home extends Component {
                 <div className="about_section_items about_image_container">
                   <a
                     className=""
+                    target="_blank"
                     href="https://www.youtube.com/watch?v=fg5M6bg6sI8"
                     id="youtube"
                   >
@@ -696,9 +697,10 @@ class Home extends Component {
                   BLOCKCHAIN <br></br>INFRASTRUCTURE
                 </p>
                 <p className="smallletters8">
-                  WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br>{" "}
-                  CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND
-                  <br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK.{" "}
+                  OWN RELIABLE WRC WALLET. <br /> EASY EXCHANGE FOR <br />{" "}
+                  ANOTHER CRYPTOCURRENCY OR <br /> WITHDRAWAL TO A BANK <br />{" "}
+                  CARD ANYWHERE IN THE <br />
+                  WORLD
                 </p>
               </div>
             </div>
@@ -728,16 +730,18 @@ class Home extends Component {
                   GLOBAL SYSTEM<br></br> AND SECURE
                 </p>
                 <p className="smallletters8">
-                  WORK COIN, IS A<br></br> CRYPTOCURRENCY USED TO<br></br>{" "}
-                  CALCULATE REMUNERATION<br></br> BETWEEN AN EMPLOYEE AND
-                  <br></br> EMPLOYER IN THE WORK<br></br> QUEST NETWORK.{" "}
+                  GLOBAL USE THROUGH THE
+                  <br /> BLOCKCHAIN SYSTEM. RELIABLY
+                  <br /> PROTECTED DATABASE AND
+                  <br /> TWO-FACTOR VERIFICATION
                 </p>
               </div>
             </div>
           </div>
           <a
+            target="_blank"
             className="join_btn btn_whitepaper"
-            href="src/assets/images/WORK QUEST white paper.pdf"
+            href="https://drive.google.com/open?id=1UJu91wQLdjJQJLLZA2SqgLu9qqLktyQ0"
           >
             DOWNLOAD WHITEPAPER
           </a>
@@ -871,8 +875,9 @@ class Home extends Component {
               <div id="6">
                 <div className="mission_item">
                   <a
+                    target="_blank"
                     className="join_btn2 pitchdeck"
-                    href="src/assets/images/WORK QUEST pitch deck.pdf"
+                    href="https://drive.google.com/open?id=1g25l63jh1NB7_V1Ryfo3OvrkG-aVWP_u"
                   >
                     DOWNLOAD OUR PITCH DECK
                   </a>
@@ -923,11 +928,11 @@ class Home extends Component {
             <div>
               <div className="sale_info_item">
                 <p className="mediumletter2">OUR START</p>
-                <p className="blueletters">Jun 21, 2020 (12:00AM GMT)</p>
+                <p className="blueletters">July 21, 2020 (12:00AM GMT)</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">END</p>
-                <p className="blueletters">Aug 21, 2020 (12:00AM GMT)</p>
+                <p className="blueletters">Oct 1, 2020 (12:00AM GMT)</p>
               </div>
               <div className="sale_info_item">
                 <p className="mediumletter2">ACCEPTABLE CURRENCIES</p>
@@ -961,8 +966,8 @@ class Home extends Component {
         <div className="section section6" id="road" ref={this.road}>
           <p className="heading1">ROAD MAP</p>
           <p className="smallletters9">
-            WITH HELP FROM OUR TEAMS, CONTRIBUTORS AND INVESTORS THESE ARE THE
-            MILESTONES WE ARE LOOKING FORWARD TO ACHEIVE
+            WITH HELP FROM OUR TEAMS, CONTRIBUTORS AND INVESTORS THESE <br />{" "}
+            ARE THE MILESTONES WE ARE LOOKING FORWARD TO ACHEIVE
           </p>
 
           <div className="slider">
@@ -1053,7 +1058,7 @@ class Home extends Component {
                     <div className="donut Dorange"></div>
                     <p style={{ fontSize: "23px", fontWeight: "700" }}>
                       <div>EVALUATION OF </div>
-                      <br /> <div> COMPLETED WORK</div> <br />
+                      <div> COMPLETED WORK</div>
                       <div> AND FEEDBACK</div>
                     </p>
                   </li>
@@ -1077,7 +1082,7 @@ class Home extends Component {
             <div className="section6-items-content">
               <div>
                 <div
-                  style={{ alignItems: "flex-start", marginTop: "-10px" }}
+                  style={{ alignItems: "flex-start", marginTop: "-75px" }}
                   className="feature_item"
                 >
                   <div id="1">
@@ -1122,7 +1127,7 @@ class Home extends Component {
                           style={{ textAlign: "center" }}
                           className="smallletters8"
                         >
-                          IN THE EMERGENCE OF <br /> DIGITAL PLATFORMS MENY{" "}
+                          IN THE EMERGENCE OF <br /> DIGITAL PLATFORMS MANY{" "}
                           <br /> JOB BOARDS TRYING TO <br /> MATCH RECRUITERS,{" "}
                           <br /> EMPLOYERS AND EMPLOYEES <br />
                           HAVE SPRUNG UP. THEY ARE <br /> INEFFICIENT AND NOT{" "}
@@ -1224,7 +1229,7 @@ class Home extends Component {
                           <br /> DATA AND EITHER PARTY TO <br /> A CONTRACT WILL
                           HAVE TO <br /> SEEK PERMISSION FROM <br /> INDIVIDUAL
                           PLATFORM <br /> PARTICIPANT IN ORDER TO <br /> USE,
-                          ACCESS OR AMEND ANY <br /> INFORMATION ALTOUGH THIS{" "}
+                          ACCESS OR AMEND ANY <br /> INFORMATION ALTHOUGH THIS{" "}
                           <br /> WORKS IN REAL TIME TO <br /> MAKE THE PROCESS
                           FAST <br /> AND RELIABLE.
                         </p>
@@ -1281,7 +1286,7 @@ class Home extends Component {
                 src="src/assets/images/BLUE BG TEXT.png"
                 className="blue-wallpaper"
               ></img>
-              <img src="src/assets/images/xd.png" id="small-logo6"></img>
+              <img src="src/assets/images/xd.png" className="white_img"></img>
             </div>
             <div className="section6-item4-content">
               <div>
