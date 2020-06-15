@@ -1317,6 +1317,8 @@ class Home extends Component {
                   WORK BY EMPLOYEE.
                 </p>
               </div>
+            </div>
+            <div className="section6-item4-button">
               <a className="timer-button" href="Workquest/index.html">
                 ENTER PLATFORM
               </a>

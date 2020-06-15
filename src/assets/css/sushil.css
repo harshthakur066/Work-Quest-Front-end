@@ -841,17 +841,26 @@ body {
   padding-top: 4rem;
   margin-left: -6rem;
 }
+.mvp_content {
+  font-size: 12.8px;
+}
 .section6-item4-content {
   position: absolute;
   top: 33%;
   width: 30%;
   left: 50%;
 }
+.section6-item4-button {
+  position: absolute;
+  top: 74%;
+  left: 17%;
+  margin: 0.5rem;
+}
 .section6-item4-content div {
-  margin-top: 0.7rem;
+  margin: 0.7rem;
 }
 .section6-item4-content div .bigletters {
-  margin-bottom: 0px;
+  margin-bottom: 18px;
 }
 .section6-item4-content div .smallletters {
   line-height: 1.5;
@@ -1582,6 +1591,13 @@ input[type="text"]::placeholder {
     left: unset;
     margin-bottom: 2rem;
   }
+  .section6-item4-button {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
+  }
   .contact_form {
     width: unset;
   }
@@ -1615,6 +1631,13 @@ input[type="text"]::placeholder {
     margin-bottom: 50px;
   }
   .section6-item4-content {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
+  }
+  .section6-item4-button {
     position: unset;
     top: unset;
     width: unset;
@@ -1799,6 +1822,13 @@ input[type="text"]::placeholder {
     margin-top: 1.5rem;
   }
   .section6-item4-content {
+    position: unset;
+    top: unset;
+    width: unset;
+    left: unset;
+    margin-bottom: 2rem;
+  }
+  .section6-item4-button {
     position: unset;
     top: unset;
     width: unset;
