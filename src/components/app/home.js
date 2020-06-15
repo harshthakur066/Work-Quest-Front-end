@@ -4,6 +4,7 @@ import "../../assets/css/app.css";
 import "../../assets/css/sushil.css";
 
 import ItemsCarousel from "react-items-carousel";
+import { Modal, Button } from "semantic-ui-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -174,13 +175,15 @@ class Home extends Component {
                   <li className="hov">
                     <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
                   </li>
+                  <li>
+                    <a
+                      onClick={this.handleForm.bind(this, "login")}
+                      className=" hov"
+                    >
+                      <div className=" faq-disable">LOGIN</div>
+                    </a>
+                  </li>
                 </ul>
-                <a
-                  onClick={this.handleForm.bind(this, "login")}
-                  className=" hov nav_login"
-                >
-                  <div className="faq-btn faq-disable">LOGIN</div>
-                </a>
               </div>
               <div
                 className={`collapse_btn ${isActive ? "nav_close_btn" : ""}`}
@@ -573,19 +576,14 @@ class Home extends Component {
             <div className="first_items first_text">
               <p
                 style={{
-                  marginBottom: "5em",
-                  fontSize: "34px",
-                  fontWeight: "bold",
+                  margin: "3em 0em",
+                  fontSize: "30px",
                 }}
               >
-                WORK QUEST <br /> ICO STARTUP <br /> A GLOBAL JOB <br />
-                MARKETPLACE
-                <br /> FOR ANY TYPE <br /> OF WORK.
+                Work Quest a global job marketplace for any <br /> type of work
+                with <br /> using cryptocurrency
               </p>
-              <p style={{ marginBottom: "4em" }}>
-                WORK QUEST ICO STARTUP A <br /> GLOBAL JOB MARKETPLACE <br />
-                FOR ANY TYPE OF WORK.
-              </p>
+
               <div className="first_text_item"></div>
               <a
                 id="join"
@@ -596,7 +594,7 @@ class Home extends Component {
               </a>
             </div>
             <div>
-              <img width="100%" src="src/assets/images/a.png"></img>
+              <img width="78%" src="src/assets/images/a.png"></img>
             </div>
           </div>
           <div className="partner">
@@ -662,7 +660,7 @@ class Home extends Component {
                 <div className="about_section_items about_image_container">
                   <a
                     className=""
-                    href="https://www.youtube.com/watch?v=SSo_EIwHSd4"
+                    href="https://www.youtube.com/watch?v=fg5M6bg6sI8"
                     id="youtube"
                   >
                     <img
