@@ -1068,10 +1068,19 @@ class Home extends Component {
                 <img src="src/assets/images/Clip.png"></img>
               </div>
             </div>
-            <div className="bg-logo-container">
+            <div style={{ marginLeft: "11rem" }} className="bg-logo-container">
               <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
             </div>
-            <div className="bg-logo-container2">
+            <div style={{ marginLeft: "-11rem" }} className="bg-logo-container">
+              <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
+            </div>
+            <div style={{ marginLeft: "11rem" }} className="bg-logo-container2">
+              <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
+            </div>
+            <div
+              style={{ marginLeft: "-11rem" }}
+              className="bg-logo-container2"
+            >
               <img src="src/assets/images/bg.png" className="bg-z-logo"></img>
             </div>
           </div>
@@ -1458,8 +1467,11 @@ class Home extends Component {
               <p className="smallletters2">
                 <div className="hov">contact@workquest.co</div>
                 <br />
-                <a className="telegram" href="https://t.me/WorkQuest">
-                  join us on telegram
+                <a
+                  className="join_btn contact_submit"
+                  href="https://t.me/WorkQuest"
+                >
+                  JOIN US ON TELEGRAM
                 </a>
               </p>
             </div>
@@ -1493,7 +1505,7 @@ class Home extends Component {
                   WHAT CRYPTOCURRENCIES CAN I USE TO <br /> PURCHASE WRC?
                 </p>
                 <p className="smallletters9">
-                  ONE CAN USE ETH, BTC, LTC OR EVEN FIAT MONEY
+                  ONE CAN USE ETH, EURO (manual mode)
                 </p>
               </div>
               <div className="faq-item">
@@ -1541,7 +1553,7 @@ class Home extends Component {
                   TRUSTWORTHY PLATFORM THAT <br /> TRANSFORMS RELATIONS BETWEEN
                   EMPLOTYERS <br /> AND EMPLOYEES IN THE INDUSTRY AND AT A{" "}
                   <br /> GLOBAL SCALE. WE TARGET 3.5 MILLION USERS <br /> AND
-                  10,000 CORPORATE USERS BY 2023
+                  10,000 CORPORATE USERS BY 2025
                 </p>
               </div>
               <div className="faq-item">
@@ -1549,7 +1561,7 @@ class Home extends Component {
                   WHAT IS THE GOAL OF THE ICO CAMPAIGN?
                 </p>
                 <p className="smallletters9">
-                  THE MAXIMUM TARGET FOR THE CAMPAIGN IS $1O <br /> MILLION
+                  SOFT CAP $1,000,000 AND HARD CAP $10,000,000
                 </p>
               </div>
               <div className="faq-item">
@@ -1662,7 +1674,7 @@ class Home extends Component {
                     <a onClick={this.scrollTofun.bind(this, "faq")}>FAQ</a>
                   </li>
                 </ul>
-                <div className="workquest">
+                <div style={{ marginTop: "2rem" }} className="workquest">
                   WORKQUEST OÜ operates with licenses: Providing services of
                   exchanging a virtual currency against <br /> a fiat currency -
                   FVR001144 Providing a virtual currency wallet service -
@@ -1702,10 +1714,9 @@ class Home extends Component {
                 </ul>
                 <div>
                   <p
+                    className="footer-bottom-text"
                     style={{
-                      textAlign: "right",
                       marginBottom: "3rem",
-                      marginRight: "6rem",
                     }}
                   >
                     WORK COIN IS A CRYPTOCURRENCY USED TO CALCULATE RENUMERATION
@@ -1713,7 +1724,7 @@ class Home extends Component {
                     NETWORK. THE COIN IS ALSO USED TO FACILITATE PAYMENT <br />
                     TRANSACTION OF ANY TYPE WITHIN OUR WORKQUEST ECOSYSTEM.
                   </p>
-                  <p className="copyright">
+                  <p className="footer-bottom-text copyright">
                     COPYRIGHT © 2020, WORKCOIN. ALL TRADE COPYRIGHTS BELONG TO
                     THEIR RESPECTIVE OWNERS
                   </p>
