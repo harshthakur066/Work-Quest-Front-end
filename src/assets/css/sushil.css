@@ -278,6 +278,10 @@ body {
 .first_text {
   margin: 0 1.5rem;
 }
+.home_text {
+  margin: 3em 0em;
+  font-size: 30px;
+}
 .first_text_item {
   display: flex;
   flex-direction: row;
@@ -1750,6 +1754,9 @@ input[type="text"]::placeholder {
   .home_img {
     margin-left: unset;
   }
+  .partner {
+    margin-top: 4rem;
+  }
 }
 /*---- extra small devices  ---------------------*/
 @media screen and (max-width: 379px) {
@@ -1941,5 +1948,37 @@ input[type="text"]::placeholder {
   }
   .home_img {
     margin-left: unset;
+  }
+  .home_text {
+    font-size: 23px;
+    margin-top: 1rem;
+  }
+  .partner {
+    margin-top: 3rem;
+  }
+  .play-btn {
+    display: block;
+    margin: auto;
+    z-index: 5;
+    width: 10rem;
+    transition: transform 0.2s;
+    animation-name: example;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    /* transform: translate(0, 0);
+    transition: all 0.4s; */
+  }
+  .play-btn:hover {
+    transform: scale(1.4);
+    animation: none;
+    width: 35%;
+  }
+  @keyframes example {
+    from {
+      width: 13%;
+    }
+    to {
+      width: 18%;
+    }
   }
 }

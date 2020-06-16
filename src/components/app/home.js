@@ -267,6 +267,15 @@ class Home extends Component {
                       LOGIN
                     </a>
                   </div>
+                  <div className="nav_link_items">
+                    <a
+                      id="signup"
+                      className="account nav-links"
+                      onClick={this.handleForm.bind(this, "signup")}
+                    >
+                      SIGNUP
+                    </a>
+                  </div>
                   <div className="mobile_nav_footer">
                     <img src="src/assets/images/croped_logo.png"></img>
                   </div>
@@ -579,12 +588,7 @@ class Home extends Component {
         <div className="section sectionFirst" id="firstSection">
           <div className="firstBox">
             <div className="first_items first_text">
-              <p
-                style={{
-                  margin: "3em 0em",
-                  fontSize: "30px",
-                }}
-              >
+              <p className="home_text">
                 Work Quest a global job <br /> marketplace for any <br /> type
                 of work with <br /> using cryptocurrency
               </p>
