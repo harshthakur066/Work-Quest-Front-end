@@ -298,7 +298,9 @@ class Home extends Component {
                   className="login_form_croped_logo"
                   src="src/assets/images/croped_logo.png"
                 ></img>
-                <p className="join_ico_pre">LOGIN AND JOIN ICO PRESALE</p>
+                <p style={{ marginBottom: "1.5rem" }} className="join_ico_pre">
+                  LOGIN AND JOIN ICO PRESALE
+                </p>
               </div>
             </div>
             <form className="login_form_content">
@@ -451,7 +453,10 @@ class Home extends Component {
                   src="src/assets/images/WORK QUEST_sign.svg"
                   className="signup_form_croped_logo"
                 />
-                <p className="wq_signup_text">
+                <p
+                  style={{ marginBottom: "0.7rem" }}
+                  className="wq_signup_text"
+                >
                   ENTER BASIC INFORMATIOIN TO GET STARTED
                 </p>
               </div>
@@ -580,8 +585,8 @@ class Home extends Component {
                   fontSize: "30px",
                 }}
               >
-                Work Quest a global job marketplace for any <br /> type of work
-                with <br /> using cryptocurrency
+                Work Quest a global job <br /> marketplace for any <br /> type
+                of work with <br /> using cryptocurrency
               </p>
 
               <div className="first_text_item"></div>
@@ -592,36 +597,40 @@ class Home extends Component {
               >
                 SIGN UP TO JOIN
               </a>
+              <div className="partner">
+                <h3>OUR PARTNERS</h3>
+              </div>
+              <ul className="partners-list">
+                <li className="partners-item">
+                  <a href="https://eucc.eu/">
+                    <img src="src/assets/images/EUCC.png"></img>
+                  </a>
+                </li>
+                <li className="partners-item">
+                  <a href="https://globiance.com/">
+                    <img src="src/assets/images/globiance.png"></img>
+                  </a>
+                </li>
+                <li className="partners-item">
+                  <a href="http://attis-group.com/?page_id=252&lang=en">
+                    <img src="src/assets/images/ag.png"></img>
+                  </a>
+                </li>
+                <li className="partners-item">
+                  <a href="https://kcolbchain.com/">
+                    <img src="src/assets/images/KCOLBCHAIN.png"></img>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div>
-              <img width="78%" src="src/assets/images/a.png"></img>
+            <div className="home_img">
+              <img width="96%" src="src/assets/images/a.png"></img>
+            </div>
+            <div className="scroll_view">
+              <div className="scroll">SCROLLDOWN</div>
+              <div className="line"></div>
             </div>
           </div>
-          <div className="partner">
-            <h3>OUR PARTNERS</h3>
-          </div>
-          <ul className="partners-list">
-            <li className="partners-item">
-              <a href="https://eucc.eu/">
-                <img src="src/assets/images/EUCC.png"></img>
-              </a>
-            </li>
-            <li className="partners-item">
-              <a href="https://globiance.com/">
-                <img src="src/assets/images/globiance.png"></img>
-              </a>
-            </li>
-            <li className="partners-item">
-              <a href="http://attis-group.com/?page_id=252&lang=en">
-                <img src="src/assets/images/ag.png"></img>
-              </a>
-            </li>
-            <li className="partners-item">
-              <a href="https://kcolbchain.com/">
-                <img src="src/assets/images/KCOLBCHAIN.png"></img>
-              </a>
-            </li>
-          </ul>
         </div>
         <Fade bottom>
           <div>
@@ -1465,7 +1474,7 @@ class Home extends Component {
             </form>
             <div style={{ marginRight: "2rem" }} className="contact_details">
               <p className="smallletters2">
-                <div className="hov">contact@workquest.co</div>
+                <div className="">contact@workquest.co</div>
                 <br />
                 <a
                   className="join_btn contact_submit"
